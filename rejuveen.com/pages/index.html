@@ -2,16 +2,6 @@
 
 <html lang="en" dir="ltr">
   <head>
-
-    
-    
-    
-    
-    
-      
-      
-    
-  
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, maximum-scale=1.0">
     <meta name="theme-color" content="#c74827">
@@ -5290,6 +5280,465 @@ body {
     width: 0 !important;
     height: 0 !important;
     display: none !important;
+  }
+
+  /* Responsive pricing layout */
+  [id="Buying Section 1"] .r-nz1tgg {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 20px !important;
+    align-items: stretch !important;
+    justify-content: center !important;
+  }
+
+  [id="Buying Section 1"] [data-replo-product-container] {
+    flex: 1 1 300px !important;
+    max-width: 360px !important;
+    min-width: 260px !important;
+    width: 100% !important;
+  }
+
+  /* Price tags scale better across widths */
+  [id="Buying Section 1"] .r-1slyi0z p,
+  [id="Buying Section 1"] .r-7w3qhb p,
+  [id="Buying Section 1"] .r-qjy6xh p {
+    font-size: clamp(28px, 3vw, 40px) !important;
+    line-height: 1.1 !important;
+    text-align: center !important;
+  }
+
+  [id="Buying Section 1"] .r-1gdz9m9 p,
+  [id="Buying Section 1"] .r-35cymp p,
+  [id="Buying Section 1"] .r-ao4o1v p {
+    font-size: clamp(18px, 2.1vw, 28px) !important;
+    line-height: 1.2 !important;
+    text-align: center !important;
+  }
+
+  /* Fix BEST VALUE badge visibility/position on desktop card */
+  [id="Buying Section 1"] .r-1beo1pg {
+    overflow: visible !important;
+    padding-top: 20px !important;
+  }
+
+  [id="Buying Section 1"] .r-1beo1pg .r-5v0ts9 {
+    top: -22px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: auto !important;
+    min-width: 140px !important;
+    max-width: max-content !important;
+    white-space: nowrap !important;
+    text-align: center !important;
+    text-align-last: center !important;
+    z-index: 25 !important;
+  }
+
+  @media (max-width: 1024px) {
+    [id="Buying Section 1"] .r-nz1tgg {
+      gap: 16px !important;
+    }
+
+    [id="Buying Section 1"] [data-replo-product-container] {
+      flex: 1 1 100% !important;
+      max-width: 420px !important;
+      min-width: 0 !important;
+    }
+  }
+
+  @media (max-width: 640px) {
+    [id="Buying Section 1"] .r-1beo1pg,
+    [id="Buying Section 1"] .r-11h2o9c,
+    [id="Buying Section 1"] .r-1u2f25f {
+      min-height: auto !important;
+    }
+
+    [id="Buying Section 1"] .r-1beo1pg .r-5v0ts9 {
+      top: -16px !important;
+      min-width: 120px !important;
+      font-size: 14px !important;
+    }
+  }
+
+  /* Overlap hotfix for price cards */
+  [id="Buying Section 1"] .r-pebab,
+  [id="Buying Section 1"] .r-hmqmjm {
+    width: auto !important;
+    max-width: 160px !important;
+    min-width: 0 !important;
+    white-space: normal !important;
+    line-height: 1.25 !important;
+    text-align: left !important;
+    text-align-last: left !important;
+  }
+
+  [id="Buying Section 1"] .r-1vdukp1,
+  [id="Buying Section 1"] .r-p9tfup {
+    min-width: 0 !important;
+    width: auto !important;
+    max-width: 220px !important;
+    justify-content: center !important;
+    gap: 8px !important;
+  }
+
+  [id="Buying Section 1"] .r-1d5texw,
+  [id="Buying Section 1"] .r-yh0jvo,
+  [id="Buying Section 1"] .r-aj077 {
+    top: auto !important;
+    bottom: 118px !important;
+    right: 10px !important;
+    width: 84px !important;
+    max-width: 84px !important;
+    min-width: 84px !important;
+    z-index: 2 !important;
+    pointer-events: none !important;
+  }
+
+  @media (min-width: 1025px) {
+    [id="Buying Section 1"] .r-1d5texw,
+    [id="Buying Section 1"] .r-yh0jvo,
+    [id="Buying Section 1"] .r-aj077 {
+      bottom: 126px !important;
+      right: 14px !important;
+      width: 92px !important;
+      max-width: 92px !important;
+      min-width: 92px !important;
+    }
+  }
+
+  @media (max-width: 640px) {
+    [id="Buying Section 1"] .r-pebab,
+    [id="Buying Section 1"] .r-hmqmjm {
+      max-width: 130px !important;
+      font-size: 13px !important;
+      line-height: 1.2 !important;
+    }
+
+    [id="Buying Section 1"] .r-1d5texw,
+    [id="Buying Section 1"] .r-yh0jvo,
+    [id="Buying Section 1"] .r-aj077 {
+      bottom: 106px !important;
+      right: 8px !important;
+      width: 72px !important;
+      max-width: 72px !important;
+      min-width: 72px !important;
+    }
+  }
+
+  /* Final responsiveness pass: right-side text + guarantee badge */
+  [id="Buying Section 1"] .r-11h2o9c,
+  [id="Buying Section 1"] .r-1u2f25f {
+    overflow: visible !important;
+  }
+
+  [id="Buying Section 1"] .r-ehisc0,
+  [id="Buying Section 1"] .r-fatge9,
+  [id="Buying Section 1"] .r-1l7gdvl {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding-right: 96px !important;
+    box-sizing: border-box !important;
+  }
+
+  [id="Buying Section 1"] .r-1gdz9m9 p,
+  [id="Buying Section 1"] .r-35cymp p,
+  [id="Buying Section 1"] .r-ao4o1v p {
+    font-size: clamp(14px, 1.4vw, 22px) !important;
+    line-height: 1.2 !important;
+    letter-spacing: 0 !important;
+  }
+
+  [id="Buying Section 1"] .r-pebab p,
+  [id="Buying Section 1"] .r-hmqmjm p,
+  [id="Buying Section 1"] .r-klnk9r p {
+    font-size: clamp(12px, 1.1vw, 18px) !important;
+    line-height: 1.2 !important;
+  }
+
+  [id="Buying Section 1"] .r-1slyi0z p,
+  [id="Buying Section 1"] .r-7w3qhb p,
+  [id="Buying Section 1"] .r-qjy6xh p {
+    font-size: clamp(24px, 2.4vw, 40px) !important;
+    line-height: 1.1 !important;
+  }
+
+  [id="Buying Section 1"] .r-1d5texw,
+  [id="Buying Section 1"] .r-yh0jvo,
+  [id="Buying Section 1"] .r-aj077 {
+    display: flex !important;
+    bottom: 94px !important;
+    right: 10px !important;
+    width: 76px !important;
+    max-width: 76px !important;
+    min-width: 76px !important;
+  }
+
+  @media (min-width: 1025px) {
+    [id="Buying Section 1"] .r-ehisc0,
+    [id="Buying Section 1"] .r-fatge9,
+    [id="Buying Section 1"] .r-1l7gdvl {
+      padding-right: 106px !important;
+    }
+
+    [id="Buying Section 1"] .r-1d5texw,
+    [id="Buying Section 1"] .r-yh0jvo,
+    [id="Buying Section 1"] .r-aj077 {
+      bottom: 106px !important;
+      right: 12px !important;
+      width: 88px !important;
+      max-width: 88px !important;
+      min-width: 88px !important;
+    }
+  }
+
+  @media (max-width: 640px) {
+    [id="Buying Section 1"] .r-ehisc0,
+    [id="Buying Section 1"] .r-fatge9,
+    [id="Buying Section 1"] .r-1l7gdvl {
+      padding-right: 78px !important;
+      row-gap: 8px !important;
+      margin-bottom: 8px !important;
+    }
+
+    [id="Buying Section 1"] .r-1gdz9m9 p,
+    [id="Buying Section 1"] .r-35cymp p,
+    [id="Buying Section 1"] .r-ao4o1v p {
+      font-size: 12px !important;
+      line-height: 1.2 !important;
+    }
+
+    [id="Buying Section 1"] .r-pebab p,
+    [id="Buying Section 1"] .r-hmqmjm p,
+    [id="Buying Section 1"] .r-klnk9r p {
+      font-size: 10px !important;
+      line-height: 1.2 !important;
+    }
+
+    [id="Buying Section 1"] .r-1slyi0z p,
+    [id="Buying Section 1"] .r-7w3qhb p,
+    [id="Buying Section 1"] .r-qjy6xh p {
+      font-size: 16px !important;
+      line-height: 1.05 !important;
+    }
+
+    [id="Buying Section 1"] .r-1d5texw,
+    [id="Buying Section 1"] .r-yh0jvo,
+    [id="Buying Section 1"] .r-aj077 {
+      display: flex !important;
+      bottom: 96px !important;
+      right: 6px !important;
+      width: 64px !important;
+      max-width: 64px !important;
+      min-width: 64px !important;
+    }
+  }
+
+  @media (max-width: 420px) {
+    [id="Buying Section 1"] .r-ehisc0,
+    [id="Buying Section 1"] .r-fatge9,
+    [id="Buying Section 1"] .r-1l7gdvl {
+      padding-right: 72px !important;
+    }
+
+    [id="Buying Section 1"] .r-1d5texw,
+    [id="Buying Section 1"] .r-yh0jvo,
+    [id="Buying Section 1"] .r-aj077 {
+      width: 58px !important;
+      max-width: 58px !important;
+      min-width: 58px !important;
+      right: 4px !important;
+      bottom: 92px !important;
+    }
+  }
+
+  /* Hard boundary fix: keep right text inside card and keep badge visible */
+  [id="Buying Section 1"] .r-522tau,
+  [id="Buying Section 1"] .r-hd4r3y,
+  [id="Buying Section 1"] .r-12bpgil {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 8px !important;
+    min-width: 0 !important;
+  }
+
+  [id="Buying Section 1"] .r-4qzc0h,
+  [id="Buying Section 1"] .r-seqhet,
+  [id="Buying Section 1"] .r-1ud4myo {
+    flex: 0 0 58% !important;
+    min-width: 0 !important;
+  }
+
+  [id="Buying Section 1"] .r-ehisc0,
+  [id="Buying Section 1"] .r-fatge9,
+  [id="Buying Section 1"] .r-1l7gdvl {
+    flex: 0 0 42% !important;
+    min-width: 0 !important;
+    padding-right: 82px !important;
+  }
+
+  [id="Buying Section 1"] .r-1gdz9m9 p,
+  [id="Buying Section 1"] .r-35cymp p,
+  [id="Buying Section 1"] .r-ao4o1v p,
+  [id="Buying Section 1"] .r-1gdz9m9 span,
+  [id="Buying Section 1"] .r-35cymp span,
+  [id="Buying Section 1"] .r-ao4o1v span {
+    font-size: 13px !important;
+    line-height: 1.15 !important;
+    overflow-wrap: anywhere !important;
+    word-break: break-word !important;
+  }
+
+  [id="Buying Section 1"] .r-1slyi0z p,
+  [id="Buying Section 1"] .r-7w3qhb p,
+  [id="Buying Section 1"] .r-qjy6xh p,
+  [id="Buying Section 1"] .r-1slyi0z span,
+  [id="Buying Section 1"] .r-7w3qhb span,
+  [id="Buying Section 1"] .r-qjy6xh span {
+    font-size: 15px !important;
+    line-height: 1.05 !important;
+    overflow-wrap: anywhere !important;
+    word-break: break-word !important;
+  }
+
+  [id="Buying Section 1"] .r-pebab,
+  [id="Buying Section 1"] .r-hmqmjm,
+  [id="Buying Section 1"] .r-klnk9r,
+  [id="Buying Section 1"] .r-pebab p,
+  [id="Buying Section 1"] .r-hmqmjm p,
+  [id="Buying Section 1"] .r-klnk9r p {
+    max-width: 100% !important;
+    white-space: normal !important;
+    font-size: 11px !important;
+    line-height: 1.15 !important;
+    overflow-wrap: anywhere !important;
+    word-break: break-word !important;
+  }
+
+  [id="Buying Section 1"] [data-replo-product-container] > button,
+  [id="Buying Section 1"] .r-1gqqkb,
+  [id="Buying Section 1"] .r-18z1ffm {
+    position: relative !important;
+    overflow: visible !important;
+  }
+
+  [id="Buying Section 1"] .r-1d5texw,
+  [id="Buying Section 1"] .r-yh0jvo,
+  [id="Buying Section 1"] .r-aj077 {
+    display: block !important;
+    bottom: 86px !important;
+    right: 6px !important;
+    width: 62px !important;
+    max-width: 62px !important;
+    min-width: 62px !important;
+    z-index: 6 !important;
+  }
+
+  @media (min-width: 1025px) {
+    [id="Buying Section 1"] .r-ehisc0,
+    [id="Buying Section 1"] .r-fatge9,
+    [id="Buying Section 1"] .r-1l7gdvl {
+      padding-right: 96px !important;
+    }
+
+    [id="Buying Section 1"] .r-1gdz9m9 p,
+    [id="Buying Section 1"] .r-35cymp p,
+    [id="Buying Section 1"] .r-ao4o1v p,
+    [id="Buying Section 1"] .r-1gdz9m9 span,
+    [id="Buying Section 1"] .r-35cymp span,
+    [id="Buying Section 1"] .r-ao4o1v span {
+      font-size: 16px !important;
+    }
+
+    [id="Buying Section 1"] .r-1slyi0z p,
+    [id="Buying Section 1"] .r-7w3qhb p,
+    [id="Buying Section 1"] .r-qjy6xh p,
+    [id="Buying Section 1"] .r-1slyi0z span,
+    [id="Buying Section 1"] .r-7w3qhb span,
+    [id="Buying Section 1"] .r-qjy6xh span {
+      font-size: 22px !important;
+    }
+
+    [id="Buying Section 1"] .r-pebab,
+    [id="Buying Section 1"] .r-hmqmjm,
+    [id="Buying Section 1"] .r-klnk9r,
+    [id="Buying Section 1"] .r-pebab p,
+    [id="Buying Section 1"] .r-hmqmjm p,
+    [id="Buying Section 1"] .r-klnk9r p {
+      font-size: 13px !important;
+      line-height: 1.2 !important;
+    }
+
+    [id="Buying Section 1"] .r-1d5texw,
+    [id="Buying Section 1"] .r-yh0jvo,
+    [id="Buying Section 1"] .r-aj077 {
+      bottom: 96px !important;
+      right: 10px !important;
+      width: 76px !important;
+      max-width: 76px !important;
+      min-width: 76px !important;
+    }
+  }
+
+  @media (max-width: 640px) {
+    [id="Buying Section 1"] .r-522tau,
+    [id="Buying Section 1"] .r-hd4r3y,
+    [id="Buying Section 1"] .r-12bpgil {
+      gap: 4px !important;
+    }
+
+    [id="Buying Section 1"] .r-4qzc0h,
+    [id="Buying Section 1"] .r-seqhet,
+    [id="Buying Section 1"] .r-1ud4myo {
+      flex: 0 0 57% !important;
+    }
+
+    [id="Buying Section 1"] .r-ehisc0,
+    [id="Buying Section 1"] .r-fatge9,
+    [id="Buying Section 1"] .r-1l7gdvl {
+      flex: 0 0 43% !important;
+      padding-right: 70px !important;
+    }
+
+    [id="Buying Section 1"] .r-1gdz9m9 p,
+    [id="Buying Section 1"] .r-35cymp p,
+    [id="Buying Section 1"] .r-ao4o1v p,
+    [id="Buying Section 1"] .r-1gdz9m9 span,
+    [id="Buying Section 1"] .r-35cymp span,
+    [id="Buying Section 1"] .r-ao4o1v span {
+      font-size: 11px !important;
+      line-height: 1.1 !important;
+    }
+
+    [id="Buying Section 1"] .r-1slyi0z p,
+    [id="Buying Section 1"] .r-7w3qhb p,
+    [id="Buying Section 1"] .r-qjy6xh p,
+    [id="Buying Section 1"] .r-1slyi0z span,
+    [id="Buying Section 1"] .r-7w3qhb span,
+    [id="Buying Section 1"] .r-qjy6xh span {
+      font-size: 13px !important;
+      line-height: 1.05 !important;
+    }
+
+    [id="Buying Section 1"] .r-pebab,
+    [id="Buying Section 1"] .r-hmqmjm,
+    [id="Buying Section 1"] .r-klnk9r,
+    [id="Buying Section 1"] .r-pebab p,
+    [id="Buying Section 1"] .r-hmqmjm p,
+    [id="Buying Section 1"] .r-klnk9r p {
+      font-size: 10px !important;
+      line-height: 1.08 !important;
+    }
+
+    [id="Buying Section 1"] .r-1d5texw,
+    [id="Buying Section 1"] .r-yh0jvo,
+    [id="Buying Section 1"] .r-aj077 {
+      bottom: 90px !important;
+      right: 4px !important;
+      width: 54px !important;
+      max-width: 54px !important;
+      min-width: 54px !important;
+    }
   }
 </style>
 
