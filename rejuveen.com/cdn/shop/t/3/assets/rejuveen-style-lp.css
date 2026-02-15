@@ -1,0 +1,3396 @@
+:root {
+  --font-nantes: "Nantes";
+  --font-nantes-italic: "Nantes-italic";
+  --font-nantes-bold: "Nantes-bold";
+  --font-nantes-bold-italic: "Nantes-BoldItalic", sans-serif;
+  --font-ppmori: "PPMori", Arial, sans-serif;
+  --font-ppmori-semibold: "PPMori-SemiBold", Arial, sans-serif;
+  --font-inter: "Inter-Regular";
+  --font-size-h0: 55px;
+  --font-size-h1: 52px;
+  --font-size-h2: 48px;
+  --font-size-h3: 30px;
+  --font-size-h4: 25px;
+  --font-size-h5: 22px;
+  --font-size-h6: 20px;
+  --font-size-subheading: 20px;
+  --font-size-body: 18px;
+  --font-size-sm-body: 0.9rem;
+  --font-size-xs-body: 0.875rem;
+  --font-size-xxs-body: 0.75rem;
+  --font-size-xxxs-body: 0.7rem;
+  --primary-color: #c74827;
+  --primary-bg-color: #fff7ef;
+  --secondary-bg-color: #fefff9;
+  --landing-page-arrow-color: #ffca7b;
+  --rejuveen-border-radius-1: 4px;
+  --rejuveen-border-radius-2: 8px;
+  --rejuveen-border-radius-3: 10px;
+  --custom-black: #000;
+  --maroon-color: #621400;
+  --custom-black-secondary: #404040;
+  --spacing-40-5: 10.5rem;
+}
+.h0,
+h1,
+.h1,
+h2,
+.h2 {
+  font-family: var(--font-nantes) !important;
+  font-weight: 400 !important;
+  line-height: 1.2;
+}
+h3,
+.h3 {
+  font-family: var(--font-ppmori-semibold);
+}
+h1,
+.h1 {
+  font-size: var(--font-size-h1) !important;
+}
+h2,
+.h2 {
+  font-size: var(--font-size-h2);
+}
+h3,
+.h3 {
+  font-size: var(--font-size-h3) !important;
+}
+h4,
+.h4 {
+  font-size: var(--font-size-h4) !important;
+}
+h5,
+.h5 {
+  font-size: var(--font-size-h5) !important;
+}
+h6,
+.h6 {
+  font-size: var(--font-size-h6) !important;
+}
+.h0 {
+  font-size: var(--font-size-h0);
+}
+.h0 span,
+h1 span,
+h2 span,
+h3 span,
+.h0 i,
+h1 i,
+h2 i {
+  font-family: var(--font-nantes-italic) !important;
+  font-style: italic !important;
+}
+p strong,
+li strong,
+li b,
+p b {
+  font-family: var(--font-ppmori-semibold);
+  font-weight: 400;
+}
+.black-border {
+  border-top: 1px solid var(--custom-black);
+}
+.subheading {
+  font-family: var(--font-ppmori) !important;
+  font-size: var(--font-size-subheading) !important;
+  font-weight: unset !important;
+}
+body {
+  font-family: var(--font-ppmori) !important;
+  font-size: var(--font-size-body) !important;
+}
+.section-header {
+  justify-content: center;
+}
+.button {
+  font-family: var(--font-ppmori-semibold);
+  text-transform: uppercase;
+}
+.button--lg {
+  padding-block-end: 0.7rem;
+}
+.button--xl {
+  padding-block-end: 0.9rem;
+}
+.text-left {
+  text-align: left;
+}
+.h-stack .text-sm {
+  font-weight: 400;
+}
+.h2 b,
+h2 b {
+  font-family: var(--font-nantes-bold-italic);
+}
+.desktop-only-br {
+  display: inline;
+}
+.mobile-br {
+  display: none;
+}
+main[class*="page-replo-"] p span strong {
+  font-family: var(--font-ppmori-semibold) !important;
+  font-weight: 400 !important;
+}
+main[class*="page-replo-"] p strong {
+  font-family: var(--font-ppmori-semibold) !important;
+  font-weight: 400 !important;
+}
+main[class*="page-replo-"] p {
+  font-family: var(--font-ppmori) !important;
+}
+.sp-provitalean--hero-banner {
+  padding-block: var(--spacing-6);
+}
+.sp-provitalean--hero-banner .media-with-text__media > * {
+  object-fit: contain;
+}
+.sp-provitalean--hero-banner .media-with-text__content {
+  padding: var(--spacing-6);
+}
+.sp-provitalean--hero-banner .media-with-text__content h2 {
+  font-size: 64px;
+}
+.sp-provitalean--hero-banner .media-with-text .subheading i {
+  font-family: var(--font-nantes-italic) !important;
+  font-style: italic !important;
+}
+.sp-provitalean--hero-banner
+  .media-with-text__content
+  .prose
+  .content-btn-div
+  ul
+  li,
+.sp-provitalean--full-section
+  .media-with-text__content
+  .prose
+  .content-btn-div
+  ul
+  li,
+.sp-provitalean--with-gap-section
+  .media-with-text__content
+  .prose
+  .content-btn-div
+  ul
+  li {
+  list-style: none;
+  position: relative;
+  padding-left: var(--spacing-20);
+  padding-block: var(--spacing-5);
+  font-size: 20px;
+  color: var(--custom-black);
+}
+.sp-provitalean--hero-banner
+  .media-with-text__content
+  .prose
+  .content-btn-div
+  ul
+  li:before,
+.sp-provitalean--full-section
+  .media-with-text__content
+  .prose
+  .content-btn-div
+  ul
+  li:before,
+.sp-provitalean--with-gap-section
+  .media-with-text__content
+  .prose
+  .content-btn-div
+  ul
+  li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: var(--spacing-18);
+  height: var(--spacing-18);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.sp-provitalean--hero-banner
+  .media-with-text__content
+  .prose
+  .content-btn-div
+  ul
+  li:nth-child(1):before {
+  background-image: url(/cdn/shop/files/90_days.svg?v=1735789420);
+}
+.sp-provitalean--hero-banner
+  .media-with-text__content
+  .prose
+  .content-btn-div
+  ul
+  li:nth-child(2):before {
+  background-image: url(/cdn/shop/files/thumbs_up.svg?v=1735789421);
+}
+.sp-provitalean--hero-banner
+  .media-with-text__content
+  .prose
+  .content-btn-div
+  ul
+  li:nth-child(3):before {
+  background-image: url(/cdn/shop/files/USA.svg?v=1735789421);
+}
+.sp-provitalean--hero-banner.sp-provitalean-rejuveen-logo
+  .media-with-text__content
+  .prose
+  .content-btn-div
+  ul
+  li {
+  padding-left: var(--spacing-10);
+}
+.sp-provitalean--hero-banner.sp-provitalean-rejuveen-logo
+  .media-with-text__content
+  .prose
+  .content-btn-div
+  ul
+  li:before {
+  background-image: url(/cdn/shop/files/rejuveen_icon_black.svg?v=1734321949);
+  width: 16px;
+  height: 16px;
+}
+.sp-provitalean--hero-banner
+  .media-with-text__content
+  .prose
+  .content-btn-div
+  .btn-center,
+.sp-provitalean--full-section
+  .media-with-text__content
+  .prose
+  .content-btn-div
+  .btn-center,
+.sp-provitalean--with-gap-section
+  .media-with-text__content
+  .prose
+  .content-btn-div
+  .btn-center {
+  margin-block-start: var(--spacing-10) !important;
+}
+.sp-provitalean--hero-banner
+  .media-with-text__content
+  .prose
+  .content-btn-div
+  .btn-center
+  .button--xl
+  .sp-provitalean--full-section
+  .media-with-text__content
+  .prose
+  .content-btn-div
+  .btn-center
+  .button--xl,
+.sp-provitalean--with-gap-section
+  .media-with-text__content
+  .prose
+  .content-btn-div
+  .btn-center
+  .button--xl,
+.sp-provitalean--hero-banner
+  .media-with-text__content
+  .prose
+  .content-btn-div
+  .promo_text,
+.sp-provitalean--with-gap-section
+  .media-with-text__content
+  .prose
+  .content-btn-div
+  .promo_text {
+  padding-inline-start: var(--spacing-8);
+  padding-inline-end: var(--spacing-8);
+}
+.sp-provitalean--full-section {
+  padding-block: 0;
+}
+.sp-provitalean--full-section
+  .media-with-text__content
+  .prose
+  .content-btn-div
+  ul
+  li:nth-child(1):before {
+  background-image: url(/cdn/shop/files/spoon_plate.svg?v=1735901915);
+}
+.sp-provitalean--full-section
+  .media-with-text__content
+  .prose
+  .content-btn-div
+  ul
+  li:nth-child(2):before {
+  background-image: url(/cdn/shop/files/hungryness.svg?v=1735901915);
+}
+.sp-provitalean--full-section
+  .media-with-text__content
+  .prose
+  .content-btn-div
+  ul
+  li:nth-child(3):before {
+  background-image: url(/cdn/shop/files/food.svg?v=1735901915);
+}
+.sp-provitalean--with-gap-section
+  .media-with-text__content
+  .prose
+  .content-btn-div
+  ul
+  li:nth-child(1):before {
+  background-image: url(/cdn/shop/files/mouthwatery.svg?v=1736159653);
+}
+.sp-provitalean--with-gap-section
+  .media-with-text__content
+  .prose
+  .content-btn-div
+  ul
+  li:nth-child(2):before {
+  background-image: url(/cdn/shop/files/injection.svg?v=1736159653);
+}
+.sp-provitalean--with-gap-section
+  .media-with-text__content
+  .prose
+  .content-btn-div
+  ul
+  li:nth-child(3):before {
+  background-image: url(/cdn/shop/files/pizza.svg?v=1736159653);
+}
+.lp-cta-section {
+  padding-block-start: calc(
+    var(--background-differs-from-previous) *
+      var(--calculated-section-spacing-block-start)
+  ) !important;
+  padding-block-end: var(--calculated-section-spacing-block-end);
+}
+.lp-cta-section .shop-the-look--text {
+  font-family: var(--font-ppmori-semibold);
+  font-weight: 400;
+}
+.sp-provitalean--full-section .prose .content-btn-div p,
+.sp-provitalean--with-gap-section .prose .content-btn-div p {
+  display: none;
+}
+.sp-provitalean--full-section .prose .content-btn-div .promo_text,
+.sp-provitalean--with-gap-section .prose .content-btn-div .promo_text {
+  display: block !important;
+}
+.sp-provitalean--full-section .prose .content-btn-div .promo_text {
+  padding-inline-start: var(--spacing-10);
+  padding-inline-end: var(--spacing-10);
+}
+.multi-column__item img {
+  width: 100%;
+  margin: 0 auto;
+}
+.multi-column__item v-stack {
+  text-align: left;
+}
+community-section .multi-column__item .review-product-title {
+  font-weight: 600;
+}
+.multi-column__item .link-text-style {
+  cursor: unset;
+  font-size: var(--font-size-sm-body);
+}
+.multi-column__item .link-text-style .link {
+  background-size: 0 1px;
+  color: var(--custom-black-secondary);
+}
+.heading-with-content .section-header {
+  grid-template-columns: 100%;
+  justify-items: stretch;
+}
+.heading-with-content .section-header h2 {
+  max-width: 500px;
+  margin: 0;
+  text-align: left;
+}
+.heading-with-content .section-header p {
+  max-width: 469px;
+}
+.heading-with-content .prose {
+  display: flex;
+  justify-content: space-between;
+}
+.faq-block .accordion__toggle {
+  font-size: var(--font-size-subheading);
+  color: var(--custom-black);
+}
+.faq-block .accordion__toggle .circle-chevron {
+  font-size: var(--font-size-body);
+}
+.faq-block .button {
+  margin-block-start: var(--spacing-8);
+}
+.price-table-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-12);
+  padding-bottom: 5%;
+}
+.free-shipping-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  gap: var(--spacing-4);
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.package-progress-steps {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+}
+.package-progress__logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: inherit;
+}
+.package-progress-step-1,
+.package-progress-step-2,
+.package-progress-step-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: var(--spacing-2);
+}
+.price-table-free-shipping {
+  font-size: var(--font-size-subheading);
+}
+.price-table-section .headings-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+}
+.price-table-heading {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.price-table-heading em {
+  font-family: var(--font-nantes-italic) !important;
+  font-style: italic !important;
+}
+.price-table-subheading {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.price-table-subheading em {
+  font-family: var(--font-nantes-italic) !important;
+  font-style: italic !important;
+}
+.price-table-cards-container {
+  gap: var(--spacing-6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.price-table-v2__col {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.price-table-v2 .card-title {
+  font-size: var(--font-size-h6) !important;
+}
+.price-table-cards-container .card-row-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+.price-table-v2__col--featured .card-row-image {
+  padding-top: 20%;
+}
+.price-table-cards-container .text-per-bottle {
+  font-size: var(--font-size-subheading);
+  margin-top: 3%;
+  color: #565656;
+}
+.price-table-cards-container .price-table__buy-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
+}
+.price-table-cards-container .card .card-row-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: var(--spacing-1);
+  padding: 5% 2%;
+}
+.price-table-cards-container .card .card-row-icons .icon-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.price-table-cards-container .card .card-row-icons .icon-container img {
+  width: 50px;
+  height: 50px;
+}
+.price-table-cards-container .card .card-row-icons .icon-container p,
+.price-table-cards-container .card .text-one-time-purchase {
+  font-size: var(--font-size-xxs-body);
+  color: #565656;
+}
+.z-2 {
+  z-index: 2;
+}
+.scroll-arrow {
+  width: 10%;
+  display: none;
+}
+.price-table-section
+  .price-table-cards-container
+  .price-table-v2__col
+  .card-variant-headings {
+  width: 100%;
+  padding: 5%;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.price-table-section
+  .price-table-cards-container
+  .price-table-v2__col
+  .card-variant-headings
+  .card-variant-pill {
+  background-color: var(--primary-bg-color);
+  border-radius: 999px;
+  width: fit-content;
+  padding: 2% 5%;
+  font-family: var(--font-nantes-italic) !important;
+  font-size: var(--font-size-body);
+  color: var(--primary-color);
+}
+.provitalean-lp-research-logos .prose h5 {
+  font-family: var(--font-nantes);
+  font-size: var(--font-size-h4) !important;
+}
+.provitalean-lp-healthcare-professionals .h0 {
+  font-family: var(--font-nantes) !important;
+  font-weight: 400 !important;
+  line-height: 1.2;
+}
+.page-sp-provitalean-natural-gl .price-table-v2__col--featured .pricing-sticker,
+.page-sp-provitalean-glp1-sourc .price-table-v2__col--featured .pricing-sticker,
+.page-sp-provitalean-weight-reg .price-table-v2__col--featured .pricing-sticker,
+.page-sp-provitalean-social-pro .price-table-v2__col--featured .pricing-sticker,
+.provitalean-listicle-5ways-rpl
+  .price-table-v2__col--featured
+  .pricing-sticker {
+  font-size: 28px;
+}
+@media only screen and (max-width: 1150px) {
+  .price-table-v2 .pricing-sticker {
+    transform: scale(1) rotate(-10deg) !important;
+    top: 15dvh !important;
+    left: -40px !important;
+    padding: 20px !important;
+  }
+  .price-table-cards-container .card-row-image {
+    padding-top: 15%;
+  }
+}
+.accordion__toggle__icon b:nth-child(1) {
+  display: inline;
+}
+.accordion__toggle__icon b:nth-child(2) {
+  display: none;
+}
+details[open] .accordion__toggle__icon b:nth-child(1) {
+  display: none;
+}
+details[open] .accordion__toggle__icon b:nth-child(2) {
+  display: inline;
+}
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.footer {
+  padding-block: var(--spacing-8) !important;
+  text-align: center;
+}
+.footer .section {
+  padding-block-start: unset;
+  padding-block-end: unset;
+}
+.footer__block-list {
+  justify-content: center;
+  border-bottom: 2px solid #2a2a2a;
+  padding-bottom: 20px;
+}
+.footer__block--menu {
+  max-width: 100%;
+}
+.footer__block--menu .v-stack {
+  display: flex;
+}
+.page-sp-provitalean-glp1support .footer .h3 {
+  font-family: var(--font-nantes) !important;
+  font-weight: 400;
+}
+.footer .text-subdued {
+  color: var(--custom-black);
+}
+.footer .input {
+  border: 1px solid var(--custom-black);
+}
+.rejuveen-disclaimer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.rejuveen-disclaimer .media-with-text__media > * {
+  object-fit: contain;
+  max-width: 180px;
+}
+.rejuveen-disclaimer .media-with-text__content {
+  padding: 0;
+}
+.rejuveen-disclaimer .media-with-text__content p {
+  font-size: 14px;
+  margin-top: 0;
+}
+.uflora-icon-section h2 {
+  font-family: var(--font-nantes) !important;
+  font-weight: 400 !important;
+  font-size: var(--font-size-h2) !important;
+  line-height: 1.2;
+  max-width: 1000px;
+  text-align: center;
+}
+.uflora-icon-section h2 b {
+  font-family: var(--font-nantes-bold-italic);
+}
+.uflora-icon-section .text-with-icons__text-wrapper p:nth-child(1) {
+  font-family: var(--font-ppmori-semibold) !important;
+  line-height: 1.2;
+}
+.page-sp-uflora-hydration .tab-content-wrapper-container h3 {
+  font-family: var(--font-ppmori-semibold) !important;
+}
+.page-sp-uflora-hydration .tab-button.active {
+  background-color: #fefff9 !important;
+  border: 2px solid #7b133b !important;
+  color: #7b133b !important;
+}
+.uflora-good-news-section {
+  padding-bottom: 0;
+}
+.uflora-good-news-section .subtext {
+  font-family: var(--font-ppmori-semibold) !important;
+  font-size: 20px !important;
+  color: var(--custom-black) !important;
+  margin-top: 20px;
+}
+.compare-uflora-section .media-text-section__heading,
+.compare-uflora-section .media-text-section__subheading,
+.compare-uflora-section .media-text-section__content {
+  max-width: 1000px;
+  margin: var(--spacing-4) auto;
+}
+.uflora-feature-section .feature p em,
+.synergistic-section .pink-title {
+  color: #7b133b;
+}
+.page-sp-uflora-hydration .free-shipping-container,
+.page-sp-uflora-infection .free-shipping-container,
+.replo-uflora-price-table .free-shipping-container {
+  background-color: #7b133b;
+}
+.page-sp-uflora-hydration .button:not([disabled]):not(.button--outline):hover,
+.page-sp-uflora-infection .button:not([disabled]):not(.button--outline):hover {
+  background-color: transparent;
+  color: #7b133b !important;
+  box-shadow: inset 0 0 0 2px #7b133b !important;
+}
+.page-sp-uflora-hydration .price-table-v2 .btn,
+.page-sp-uflora-infection .price-table-v2 .btn,
+.replo-uflora-price-table .price-table-v2 .btn {
+  background: #7b133b;
+  border: 2px solid #7b133b;
+}
+.page-sp-uflora-hydration .price-table-v2 .btn:hover,
+.page-sp-uflora-infection .price-table-v2 .btn:hover {
+  background: transparent;
+  color: #7b133b !important;
+  box-shadow: inset 0 0 0 2px #7b133b !important;
+}
+.replo-uflora-price-table .price-table-v2__col--featured .pricing-sticker,
+.page-sp-uflora-hydration .price-table-v2__col--featured .pricing-sticker,
+.page-sp-uflora-infection .price-table-v2__col--featured .pricing-sticker {
+  background-color: #7b133b;
+  font-size: 28px;
+}
+.page-sp-uflora-hydration .uflora-experience-section h2,
+.page-sp-uflora-infection .uflora-experience-section h2 {
+  color: #7b133b !important;
+}
+.page-sp-uflora-hydration .shopify-section--accordion-content .section,
+.page-sp-uflora-infection .shopify-section--accordion-content .section,
+.page-sp-provitalean-gut-suppor .shopify-section--accordion-content .section {
+  padding-block: var(--spacing-3);
+}
+.page-sp-uflora-hydration .shopify-section--accordion-content .accordion-box,
+.page-sp-uflora-infection .shopify-section--accordion-content .accordion-box {
+  padding: 15px;
+}
+.page-sp-uflora-hydration
+  .shopify-section--accordion-content
+  .accordion__toggle,
+.page-sp-uflora-infection
+  .shopify-section--accordion-content
+  .accordion__toggle {
+  justify-content: center;
+}
+.page-sp-uflora-hydration
+  .shopify-section--accordion-content
+  .accordion__toggle
+  span,
+.page-sp-uflora-infection
+  .shopify-section--accordion-content
+  .accordion__toggle
+  span {
+  background-color: #7b133b;
+}
+.page-sp-uflora-hydration
+  .shopify-section--accordion-content
+  .accordion__toggle
+  span,
+.page-sp-uflora-infection
+  .shopify-section--accordion-content
+  .accordion__toggle
+  span,
+.page-sp-provitalean-gut-suppor
+  .shopify-section--accordion-content
+  .accordion__toggle
+  span {
+  padding: 10px 45px;
+  font-size: 25px;
+  color: #fff;
+  border: 1px solid;
+  border-radius: 40px;
+}
+.page-sp-uflora-hydration
+  .shopify-section--accordion-content
+  .accordion__toggle__icon,
+.page-sp-uflora-infection
+  .shopify-section--accordion-content
+  .accordion__toggle__icon,
+.page-sp-provitalean-gut-suppor
+  .shopify-section--accordion-content
+  .accordion__toggle__icon {
+  display: none;
+}
+.uflora-reference-section .accordion__question-wrapper {
+  justify-content: center;
+}
+.uflora-infection-stack-section
+  .media-text-section__image-content-wrapper.has-side-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.uflora-infection-stack-section h2 {
+  max-width: 1000px;
+  text-align: center;
+  margin: 0 auto;
+}
+.uflora-infection-stack-section
+  .media-text-section__image-content-wrapper.has-side-content
+  picture
+  img {
+  max-width: 450px;
+  margin: 0 auto;
+}
+.uflora-infection-stack-section .custom-border,
+.compare-uflora-section .custom-border {
+  display: none;
+}
+.compare-uflora-section .shop-the-look--text {
+  font-family: var(--font-ppmori-semibold);
+  font-weight: 400;
+  color: #7b133b;
+  font-size: 16px;
+}
+.uflora-infection-stack-section .media-text-section__subheading,
+.uflora-infection-stack-section .media-text-section__content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.uflora-infection-stack-section .media-text-section__subheading,
+.page-sp-uflora-infection #ingredients-section .text-detail-switcher-name sup {
+  display: none;
+}
+.uflora-experience-section .content-btn-div .promo_text {
+  font-family: var(--font-ppmori-semibold);
+  font-weight: 400;
+  color: #7b133b;
+  font-size: 16px;
+  margin-left: 40px;
+}
+.page-sp-uflora-hydration .shop-the-look--text,
+.page-sp-uflora-infection .shop-the-look--text {
+  color: #7b133b;
+  font-size: 16px;
+  font-family: var(--font-ppmori-semibold);
+  font-weight: 400;
+}
+.page-sp-uflora-hydration #ingredients-section .text-detail-switcher-name sup,
+.page-sp-uflora-hydration #ingredients-section .images-scrolling__content sup {
+  display: none;
+}
+.page-sp-osteva-gt .osteva-banner .media-with-text__media > *,
+.page-sp-osteva-tendinopathy .osteva-banner .media-with-text__media > *,
+.page-sp-osteva-tendinopathy-sns .osteva-banner .media-with-text__media > *,
+.page-sp-osteva-lumbar .osteva-banner .media-with-text__media > *,
+.page-sp-osteva-rct .osteva-banner .media-with-text__media > * {
+  object-fit: contain;
+  object-position: top;
+}
+.page-sp-osteva-gt .osteva-banner .media-with-text__content {
+  padding: var(--spacing-6);
+}
+.page-sp-osteva-gt .gt-cause-section .media-with-text__media > *,
+.page-sp-osteva-gt .save-with-bundle-osteva .media-with-text__media > *,
+.page-sp-osteva-gt .otc-meds-section .media-with-text__content > *,
+.page-sp-osteva-tendinopathy .gt-cause-section .media-with-text__media > *,
+.page-sp-osteva-tendinopathy
+  .save-with-bundle-osteva
+  .media-with-text__media
+  > *,
+.page-sp-osteva-tendinopathy .otc-meds-section .media-with-text__content > *,
+.page-sp-osteva-lumbar .otc-meds-section .media-with-text__content > *,
+.page-sp-osteva-tendinopathy-sns .gt-cause-section .media-with-text__media > *,
+.page-sp-osteva-tendinopathy-sns
+  .save-with-bundle-osteva
+  .media-with-text__media
+  > *,
+.page-sp-osteva-tendinopathy-sns
+  .otc-meds-section
+  .media-with-text__content
+  > * {
+  object-fit: contain;
+  object-position: top;
+}
+.collagen-powder-section .multi-column-wrapper .prose p {
+  text-align: center;
+}
+.collagen-powder-section .section--note {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff7ee !important;
+  color: var(--primary-color) !important;
+  text-align: center;
+}
+.page-sp-osteva-gt .lp-testimonials .section-header p {
+  color: var(--custom-black);
+  text-align: left;
+}
+.collagen-fortifier-section .custom-border,
+.quick-result-section .custom-border {
+  display: none;
+}
+.collagen-fortifier-section .media-text-section__heading,
+.quick-result-section .media-text-section__heading {
+  text-align: center;
+}
+.quick-result-section .media-text-section__content {
+  margin: 0 auto;
+}
+.quick-result-section .media-text-section__content p {
+  margin-bottom: var(--spacing-4);
+}
+.page-sp-osteva-gt .card-compare-section__header,
+.page-sp-osteva-gt .card-compare-section__wrapper,
+.page-sp-osteva-tendinopathy .card-compare-section__header,
+.page-sp-osteva-tendinopathy .card-compare-section__wrapper,
+.page-sp-osteva-lumbar .card-compare-section__header,
+.page-sp-osteva-lumbar .card-compare-section__wrapper,
+.page-sp-osteva-tendinopathy-sns .card-compare-section__header,
+.page-sp-osteva-tendinopathy-sns .card-compare-section__wrapper,
+.page-sp-osteva-rct .card-compare-section__header,
+.page-sp-osteva-rct .card-compare-section__wrapper {
+  max-width: 1000px;
+  width: 100%;
+  margin-inline: auto;
+}
+.page-sp-osteva-gt .card-compare-section .custom-border,
+.page-sp-osteva-tendinopathy .card-compare-section .custom-border,
+.page-sp-osteva-tendinopathy-sns .card-compare-section .custom-border,
+.page-sp-osteva-lumbar .card-compare-section .custom-border,
+.page-sp-osteva-rct .card-compare-section .custom-border {
+  display: none;
+}
+.page-sp-osteva-gt .layout-2 .card-compare-section__content ul li,
+.page-sp-osteva-tendinopathy .layout-2 .card-compare-section__content ul li,
+.page-sp-osteva-tendinopathy-sns .layout-2 .card-compare-section__content ul li,
+.page-sp-osteva-lumbar .layout-2 .card-compare-section__content ul li,
+.page-sp-osteva-rct .layout-2 .card-compare-section__content ul li {
+  list-style: none;
+  position: relative;
+  padding-left: var(--spacing-12);
+  padding-block: var(--spacing-5);
+  margin-bottom: 0;
+}
+.page-sp-osteva-gt .layout-2 .card-compare-section__content ul li:before,
+.page-sp-osteva-tendinopathy
+  .layout-2
+  .card-compare-section__content
+  ul
+  li:before,
+.page-sp-osteva-tendinopathy-sns
+  .layout-2
+  .card-compare-section__content
+  ul
+  li:before,
+.page-sp-osteva-lumbar .layout-2 .card-compare-section__content ul li:before,
+.page-sp-osteva-rct .layout-2 .card-compare-section__content ul li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: var(--spacing-8);
+  height: var(--spacing-8);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.page-sp-osteva-gt .card-compare-section__card:nth-of-type(1) ul li:before,
+.page-sp-osteva-tendinopathy
+  .card-compare-section__card:nth-of-type(1)
+  ul
+  li:before,
+.page-sp-osteva-tendinopathy-sns
+  .card-compare-section__card:nth-of-type(1)
+  ul
+  li:before,
+.page-sp-osteva-lumbar .card-compare-section__card:nth-of-type(1) ul li:before,
+.page-sp-osteva-rct .card-compare-section__card:nth-of-type(1) ul li:before {
+  background-image: url(/cdn/shop/files/tick.png?v=1747370861);
+}
+.page-sp-osteva-gt .card-compare-section__card:nth-of-type(2) ul li:before,
+.page-sp-osteva-tendinopathy
+  .card-compare-section__card:nth-of-type(2)
+  ul
+  li:before,
+.page-sp-osteva-tendinopathy-sns
+  .card-compare-section__card:nth-of-type(2)
+  ul
+  li:before,
+.page-sp-osteva-lumbar .card-compare-section__card:nth-of-type(2) ul li:before,
+.page-sp-osteva-rct .card-compare-section__card:nth-of-type(2) ul li:before {
+  background-image: url(/cdn/shop/files/x.png?v=1747370861);
+}
+.mbg-logo-section {
+  text-align: center !important;
+}
+.mbg-logo-section .custom-border {
+  display: none;
+}
+.mbg-logo-section .media-text-section__content {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+.mbg-logo-section .media-text-section__content p {
+  margin-bottom: var(--spacing-4);
+}
+.page-sp-osteva-gt .free-shipping-container {
+  background-color: #621400;
+}
+.osteva-capsule-section .media-with-text__content .content-btn-div {
+  color: var(--custom-black);
+}
+.osteva-capsule-section .media-with-text__media img {
+  object-fit: contain;
+  object-position: center;
+}
+.page-sp-osteva-gt .price-table-v2 .pricing-sticker {
+  width: 85px;
+  height: 85px;
+}
+.page-sp-osteva-sns .osteva-banner .media-with-text__content,
+.page-sp-osteva-tendinopathy .osteva-banner .media-with-text__content,
+.page-sp-osteva-tendinopathy-sns .osteva-banner .media-with-text__content,
+.page-sp-osteva-lumbar .osteva-banner .media-with-text__content,
+.page-sp-osteva-rct .osteva-banner .media-with-text__content {
+  padding-inline: var(--spacing-6);
+}
+.page-sp-osteva-sns .hips-and-knee-section .section-header {
+  justify-content: left;
+}
+.hips-and-knee-section ul {
+  padding-inline-start: var(--spacing-6);
+  list-style: disc;
+}
+.hips-and-knee-section .button {
+  margin-block-start: var(--spacing-6);
+}
+.page-sp-osteva-sns .collagen-fortifier-section .media-text-section__content p,
+.page-sp-osteva-tendinopathy
+  .collagen-fortifier-section
+  .media-text-section__content
+  p,
+.page-sp-osteva-tendinopathy-sns
+  .collagen-fortifier-section
+  .media-text-section__content
+  p {
+  margin-block-end: var(--spacing-2-5);
+}
+.page-sp-osteva-sns .collagen-fortifier-section .media-text-section__content,
+.page-sp-osteva-tendinopathy
+  .collagen-fortifier-section
+  .media-text-section__content,
+.page-sp-osteva-tendinopathy-sns
+  .collagen-fortifier-section
+  .media-text-section__content {
+  margin: 0 auto;
+}
+.page-sp-osteva-sns .collagen-fortifier-section .media-text-section__image img,
+.page-sp-osteva-tendinopathy
+  .collagen-fortifier-section
+  .media-text-section__image
+  img,
+.page-sp-osteva-tendinopathy-sns
+  .collagen-fortifier-section
+  .media-text-section__image
+  img {
+  max-width: 50%;
+}
+.uflora-lp-static-press-seen-in {
+  border-top: white 1px solid;
+  padding-top: 1% !important;
+  padding-bottom: 1% !important;
+}
+.provitalean-lp-static-press-seen-in,
+.osteva-lp-static-press-seen-in,
+.uflora-lp-static-press-icons {
+  padding-top: 1% !important;
+  padding-bottom: 1% !important;
+}
+.page-sp-provitalean-gut-suppor
+  .sp-provitalean-gut-support-ozempic
+  .media-with-text
+  .media-with-text__content {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.page-sp-provitalean-gut-suppor
+  .sp-provitalean-gut-support-ozempic
+  .media-with-text
+  .media-with-text__content
+  .prose {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  place-self: auto;
+}
+.page-sp-provitalean-gut-suppor
+  .sp-provitalean-gut-support-ozempic
+  .media-with-text
+  .media-with-text__content
+  .prose
+  p {
+  line-height: 2.2;
+}
+.page-sp-provitalean-gut-suppor .gut-bacterial-burnout .prose div:last-of-type {
+  text-align: left;
+}
+.page-sp-provitalean-gut-suppor .wean-to-lean-section .bottom-section {
+  flex-direction: column;
+}
+.page-sp-provitalean-gut-suppor
+  .wean-to-lean-section
+  .bottom-section
+  .left-side {
+  width: 50%;
+}
+.page-sp-provitalean-gut-suppor
+  .wean-to-lean-section
+  .bottom-section
+  .right-side {
+  text-align: center;
+}
+.page-sp-provitalean-gut-suppor .good-news-glp1-results .prose ul {
+  gap: 0;
+}
+.page-sp-provitalean-gut-suppor .good-news-glp1-results .prose ul,
+.page-sp-provitalean-gut-suppor .gut-support-hiw .prose ul {
+  color: #000;
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+.page-sp-provitalean-gut-suppor .good-news-glp1-results .prose ul li,
+.page-sp-provitalean-gut-suppor .gut-support-hiw .prose ul li {
+  position: relative;
+  border-bottom: 1px solid #000;
+  padding-bottom: 2%;
+  margin-bottom: 2%;
+  display: grid;
+  grid-template-columns: 16px 1fr;
+  align-items: center;
+  column-gap: 8px;
+}
+.page-sp-provitalean-gut-suppor .good-news-glp1-results .prose ul li:last-child,
+.page-sp-provitalean-gut-suppor .gut-support-hiw .prose ul li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.page-sp-provitalean-gut-suppor .good-news-glp1-results .prose ul li:before,
+.page-sp-provitalean-gut-suppor .gut-support-hiw .prose ul li:before {
+  content: "";
+  left: 0;
+  top: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(/cdn/shop/files/rejuveen_icon_black.svg?v=1734321949);
+  width: 16px;
+  height: 16px;
+}
+.page-sp-provitalean-gut-suppor .good-news-glp1-results .prose ul li > *,
+.page-sp-provitalean-gut-suppor .gut-support-hiw .prose ul li > * {
+  min-width: 0;
+}
+.page-sp-provitalean-gut-suppor .gut-support-ozempic-results {
+  padding: 6% 4% 4%;
+}
+.page-sp-provitalean-gut-suppor .gut-support-ozempic-results .media-with-text {
+  gap: var(--spacing-7);
+}
+.page-sp-provitalean-gut-suppor
+  .gut-support-ozempic-results
+  .media-with-text
+  .h2,
+.page-sp-provitalean-gut-suppor .gut-support-hiw .media-with-text .h2 {
+  color: #000 !important;
+  text-align: left !important;
+}
+.page-sp-provitalean-gut-suppor
+  .gut-support-ozempic-results
+  .media-with-text__content {
+  padding: 4%;
+}
+.page-sp-provitalean-gut-suppor
+  .gut-support-ozempic-results
+  .media-with-text__content
+  .content-btn-div {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1.5rem;
+}
+.page-sp-provitalean-gut-suppor
+  .gut-support-ozempic-results
+  .media-with-text__content
+  .content-btn-div
+  > ul {
+  grid-column: 1 / -1;
+  width: 100%;
+  margin: 0;
+}
+.page-sp-provitalean-gut-suppor
+  .gut-support-ozempic-results
+  .media-with-text__content
+  .content-btn-div
+  a {
+  width: 100%;
+}
+.page-sp-provitalean-gut-suppor
+  .gut-support-ozempic-results
+  .media-with-text__content
+  .content-btn-div
+  .promo_text {
+  color: var(--primary-color);
+  font-size: var(--font-size-sm-body);
+}
+.page-sp-provitalean-gut-suppor .pro-vs-without .rich-text__wrapper .prose p,
+.page-sp-provitalean-gut-suppor .ingredients-section .prose .h2 i,
+.page-sp-provitalean-gut-suppor
+  .good-news-glp1-results
+  .place-self-start-center
+  .prose
+  p
+  i,
+.page-sp-osteva-tendinopathy
+  .collagen-degen-hotspots
+  .section-stack
+  .section-header
+  .prose
+  p
+  em,
+.page-sp-osteva-tendinopathy
+  .card-compare-section
+  .card-compare-section__title
+  i,
+.page-sp-osteva-lumbar .card-compare-section .card-compare-section__title i,
+.page-sp-osteva-tendinopathy-sns
+  .collagen-degen-hotspots
+  .section-stack
+  .section-header
+  .prose
+  p
+  em,
+.page-sp-osteva-tendinopathy-sns
+  .card-compare-section
+  .card-compare-section__title
+  i {
+  font-family: var(--font-nantes-italic) !important;
+  font-style: italic !important;
+}
+.page-sp-osteva-tendinopathy .osteva-banner .media-with-text__content,
+.page-sp-osteva-lumbar .osteva-banner .media-with-text__content,
+.page-sp-osteva-rct .osteva-banner .media-with-text__content,
+.page-sp-osteva-tendinopathy .gt-cause-section .media-with-text__content,
+.page-sp-osteva-lumbar .gt-cause-section .media-with-text__content,
+.page-sp-osteva-tendinopathy .save-with-bundle-osteva .media-with-text__content,
+.page-sp-osteva-tendinopathy-sns .osteva-banner .media-with-text__content,
+.page-sp-osteva-tendinopathy-sns .gt-cause-section .media-with-text__content,
+.page-sp-osteva-tendinopathy-sns
+  .save-with-bundle-osteva
+  .media-with-text__content {
+  padding: 0%;
+}
+.page-sp-osteva-tendinopathy
+  .gt-cause-section
+  .media-with-text__content
+  .prose
+  p,
+.page-sp-osteva-tendinopathy
+  .save-with-bundle-osteva
+  .media-with-text__content
+  .prose
+  p,
+.page-sp-osteva-tendinopathy-sns
+  .gt-cause-section
+  .media-with-text__content
+  .prose
+  p,
+.page-sp-osteva-tendinopathy-sns
+  .save-with-bundle-osteva
+  .media-with-text__content
+  .prose
+  p {
+  color: var(--custom-black);
+}
+.page-sp-osteva-tendinopathy .gt-cause-section .media-with-text__media img,
+.page-sp-osteva-tendinopathy-sns .gt-cause-section .media-with-text__media img {
+  border: var(--custom-black) solid 2px;
+}
+.page-sp-osteva-tendinopathy .collagen-degen-hotspots,
+.page-sp-osteva-tendinopathy-sns .collagen-degen-hotspots {
+  background-color: var(--primary-bg-color);
+}
+.page-sp-osteva-tendinopathy .collagen-degen-hotspots .section-stack,
+.page-sp-osteva-tendinopathy-sns .collagen-degen-hotspots .section-stack {
+  grid-template-rows: auto;
+  grid-template-columns: unset !important;
+}
+.page-sp-osteva-tendinopathy
+  .collagen-degen-hotspots
+  .section-stack
+  .section-header,
+.page-sp-osteva-tendinopathy-sns
+  .collagen-degen-hotspots
+  .section-stack
+  .section-header {
+  grid-row: 1;
+  max-width: 100% !important;
+}
+.page-sp-osteva-tendinopathy
+  .collagen-degen-hotspots
+  .section-stack
+  .section-header
+  .prose,
+.page-sp-osteva-tendinopathy-sns
+  .collagen-degen-hotspots
+  .section-stack
+  .section-header
+  .prose {
+  text-align: center;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.page-sp-osteva-tendinopathy
+  .collagen-degen-hotspots
+  .section-stack
+  .section-header
+  .prose
+  p
+  em,
+.page-sp-osteva-tendinopathy-sns
+  .collagen-degen-hotspots
+  .section-stack
+  .section-header
+  .prose
+  p
+  em {
+  color: var(--primary-color);
+}
+.page-sp-osteva-tendinopathy
+  .collagen-degen-hotspots
+  .section-stack
+  .content-over-media,
+.page-sp-osteva-tendinopathy-sns
+  .collagen-degen-hotspots
+  .section-stack
+  .content-over-media {
+  grid-row: 2;
+}
+.page-sp-osteva-tendinopathy
+  .otc-meds-section
+  .media-with-text__content
+  .combine-head-subhead,
+.page-sp-osteva-tendinopathy-sns
+  .otc-meds-section
+  .media-with-text__content
+  .combine-head-subhead {
+  color: var(--primary-color);
+}
+.page-sp-osteva-tendinopathy .lp-testimonials .section-header .prose p,
+.page-sp-osteva-tendinopathy-sns .lp-testimonials .section-header .prose p {
+  color: var(--custom-black);
+}
+.page-sp-osteva-tendinopathy .price-table-section .free-shipping-container,
+.page-sp-osteva-tendinopathy-sns .price-table-section .free-shipping-container,
+.page-sp-osteva-lumbar .price-table-section .free-shipping-container,
+.page-sp-osteva-rct .price-table-section .free-shipping-container {
+  background-color: var(--maroon-color);
+}
+.page-sp-osteva-tendinopathy .osteva-capsule-section .media-with-text__media,
+.page-sp-osteva-tendinopathy-sns
+  .osteva-capsule-section
+  .media-with-text__media {
+  place-content: center;
+}
+.page-sp-osteva-tendinopathy
+  .collagen-fortifier-section
+  .media-with-text
+  .media-with-text__content
+  .prose,
+.page-sp-osteva-tendinopathy-sns
+  .collagen-fortifier-section
+  .media-with-text
+  .media-with-text__content
+  .prose {
+  place-self: center;
+}
+.page-sp-osteva-tendinopathy
+  .quick-result-section
+  .media-text-section__button
+  .button,
+.page-sp-osteva-tendinopathy-sns
+  .quick-result-section
+  .media-text-section__button
+  .button {
+  background-color: #fefff9;
+  color: #c74827;
+}
+.page-sp-osteva-tendinopathy
+  .quick-result-section
+  .media-text-section__button
+  .button:hover,
+.page-sp-osteva-tendinopathy-sns
+  .quick-result-section
+  .media-text-section__button
+  .button:hover {
+  background-color: transparent !important;
+  color: var(--secondary-bg-color) !important;
+  box-shadow: inset 0 0 0 2px var(--secondary-bg-color) !important;
+}
+.page-sp-provitalean-gut-suppor
+  .shopify-section--accordion-content
+  .accordion__toggle
+  span {
+  background-color: #000;
+}
+@media (min-width: 768px) {
+  .page-sp-provitalean-gut-suppor .gut-support-ozempic-results {
+    padding: 0;
+  }
+  .page-sp-provitalean-gut-suppor
+    .gut-support-ozempic-results
+    .media-with-text__content
+    .prose {
+    place-self: start;
+  }
+  .page-sp-provitalean-gut-suppor
+    .gut-support-ozempic-results
+    .media-with-text__content
+    .content-btn-div {
+    grid-template-columns: max-content 1fr;
+    column-gap: 1rem;
+    row-gap: 2rem;
+    align-items: center;
+  }
+  .page-sp-provitalean-gut-suppor
+    .gut-support-ozempic-results
+    .media-with-text__content
+    .content-btn-div
+    > ul {
+    grid-column: 1 / -1;
+    row-gap: 1em;
+  }
+  .page-sp-provitalean-gut-suppor
+    .gut-support-ozempic-results
+    .media-with-text__content
+    .btn-center {
+    grid-column: 1;
+    justify-self: start;
+    text-align: left;
+    width: auto;
+  }
+  .page-sp-provitalean-gut-suppor
+    .gut-support-ozempic-results
+    .media-with-text__content
+    .btn-center
+    a {
+    display: inline-block;
+    width: fit-content;
+  }
+  .page-sp-provitalean-gut-suppor
+    .gut-support-ozempic-results
+    .media-with-text__content
+    .promo_text {
+    grid-column: 2;
+    margin: 0;
+  }
+  .page-sp-provitalean-gut-suppor .lp-testimonials .section-stack {
+    grid-template-columns: 30% 70%;
+    gap: var(--spacing-6);
+    align-items: start;
+  }
+  .page-sp-provitalean-gut-suppor
+    .lp-testimonials
+    .section-stack
+    .section-header {
+    grid-template-columns: auto;
+    text-align: left;
+    grid-column: 1;
+  }
+  .page-sp-provitalean-gut-suppor
+    .lp-testimonials
+    .section-stack
+    .multi-column-wrapper {
+    grid-column: 2;
+    position: relative;
+    overflow: visible;
+  }
+  .page-sp-provitalean-gut-suppor
+    .lp-testimonials
+    .multi-column-wrapper
+    .multi-column {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-6);
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+  .page-sp-provitalean-gut-suppor
+    .lp-testimonials
+    .multi-column-wrapper
+    .multi-column
+    .multi-column__item {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 1 / 1;
+  }
+  .page-sp-provitalean-gut-suppor
+    .lp-testimonials
+    .multi-column-wrapper
+    .scroll-arrow {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: #00000080;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: opacity 0.3s;
+  }
+  .page-sp-provitalean-gut-suppor
+    .lp-testimonials
+    .multi-column-wrapper
+    .scroll-arrow.left {
+    left: 2%;
+  }
+  .page-sp-provitalean-gut-suppor
+    .lp-testimonials
+    .multi-column-wrapper
+    .scroll-arrow.right {
+    right: 2%;
+  }
+  .page-sp-provitalean-gut-suppor
+    .lp-testimonials
+    .multi-column-wrapper
+    .scroll-arrow.disabled {
+    display: none !important;
+  }
+  .page-sp-provitalean-gut-suppor
+    .wean-to-lean-section
+    .bottom-section
+    .text-overlay {
+    padding-top: 2% !important;
+    padding-bottom: 2% !important;
+  }
+  .page-sp-provitalean-gut-suppor .ingredients-section .prose {
+    width: 75%;
+    margin: auto;
+  }
+  .page-sp-osteva-tendinopathy
+    .otc-meds-section
+    .media-with-text__content
+    .prose,
+  .page-sp-osteva-tendinopathy-sns
+    .otc-meds-section
+    .media-with-text__content
+    .prose {
+    place-self: center;
+  }
+  .page-sp-osteva-tendinopathy
+    .collagen-degen-hotspots
+    .section-stack
+    .content-over-media,
+  .page-sp-osteva-tendinopathy-sns
+    .collagen-degen-hotspots
+    .section-stack
+    .content-over-media {
+    width: 40%;
+    margin: auto;
+  }
+  .page-sp-osteva-tendinopathy .osteva-banner,
+  .page-sp-osteva-tendinopathy-sns .osteva-banner {
+    padding-top: 2%;
+  }
+  .page-sp-osteva-lumbar .rich-text__wrapper .prose {
+    justify-items: stretch;
+  }
+}
+.page-sp-provitalean-gut-suppor .pro-vs-without .rich-text__wrapper .prose p {
+  max-width: fit-content;
+}
+.page-sp-provitalean-gut-suppor
+  .pro-vs-without
+  .rich-text__wrapper
+  .prose
+  div:first-of-type,
+.page-sp-provitalean-gut-suppor .pro-vs-without .rich-text__wrapper .prose img {
+  width: 50%;
+}
+.page-sp-provitalean-gut-suppor .gut-support-hiw .media-with-text__media img {
+  object-fit: contain;
+}
+.page-sp-provitalean-gut-suppor .gut-support-hiw .media-with-text__content {
+  padding-top: 0;
+}
+.page-sp-provitalean-gut-suppor
+  .gut-support-hiw
+  .media-with-text__content
+  .prose {
+  place-self: start;
+}
+.page-sp-provitalean-gut-suppor
+  .gut-support-hiw
+  .prose
+  .content-btn-div
+  > p:nth-of-type(3) {
+  color: var(--primary-color);
+}
+.page-sp-provitalean-gut-suppor
+  .first-90-days-confidence
+  .multi-column-wrapper
+  .multi-column__item
+  .review-product-title {
+  position: relative;
+  padding-left: var(--spacing-24);
+}
+.page-sp-provitalean-gut-suppor
+  .first-90-days-confidence
+  .multi-column-wrapper
+  .multi-column__item
+  .review-product-title:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 80px;
+  height: 1.7px;
+  background-color: var(--custom-black);
+  transform: translateY(-50%);
+}
+.page-sp-provitalean-gut-suppor
+  .first-90-days-confidence
+  .multi-column-wrapper
+  .multi-column__item
+  .prose
+  p:last-of-type {
+  margin-top: 0;
+}
+.page-sp-provitalean-gut-suppor
+  .real-women-video-testimonials
+  .section-header
+  .prose {
+  align-items: center;
+}
+.page-sp-provitalean-gut-suppor
+  .real-women-video-testimonials
+  .section-header
+  p {
+  margin: 0;
+}
+.page-sp-provitalean-gut-suppor .price-table-section {
+  padding-top: 5%;
+}
+.page-sp-provitalean-gut-suppor
+  .price-table-section
+  .price-table--promo-banner {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.page-sp-provitalean-gut-suppor
+  .price-table-section
+  .price-table--promo-banner
+  img {
+  border-radius: var(--rejuveen-border-radius-2);
+}
+.page-sp-provitalean-gut-suppor
+  .price-table-section
+  .pricing-sticker--percentage {
+  background: #e09f3e;
+}
+.page-sp-provitalean-gut-suppor .lp-testimonials .prose p a {
+  color: var(--primary-color);
+}
+.page-sp-provitalean-gut-suppor
+  .good-news-glp1-results
+  .media-with-text__content {
+  padding: 0;
+}
+.page-sp-osteva-y .collagen-powder-section .section--note,
+.page-sp-osteva-lumbar .collagen-powder-section .section--note,
+.page-sp-osteva-rct .collagen-powder-section .section--note {
+  background-color: #fefff9 !important;
+}
+.page-sp-osteva-y h2 i {
+  font-family: var(--font-nantes-italic) !important;
+  font-style: italic !important;
+}
+.page-sp-osteva-y .progress-timeline,
+.page-sp-osteva-lumbar .progress-timeline,
+.page-sp-osteva-rct .progress-timeline {
+  padding-block-end: 0%;
+}
+.page-sp-osteva-y .price-table-section .free-shipping-container {
+  background-color: #621400;
+}
+.page-sp-osteva-y .shop-the-look--text i {
+  font-family: var(--font-nantes-italic) !important;
+}
+.page-sp-osteva-y .managing-pain-section,
+.page-sp-osteva-lumbar .managing-pain-section,
+.page-sp-osteva-rct .managing-pain-section {
+  gap: var(--spacing-6);
+}
+.page-sp-osteva-y .section-button .section {
+  padding-block-end: 0% !important;
+}
+.page-sp-osteva-y .gt-cause-section .content-btn-div p,
+.page-sp-osteva-lumbar .gt-cause-section .content-btn-div p,
+.page-sp-osteva-rct .gt-cause-section .content-btn-div p {
+  color: var(--custom-black);
+}
+.page-sp-osteva-y .ht-media-with-text .media-with-text__media img,
+.page-sp-osteva-rct .ht-media-with-text .media-with-text__media img {
+  border: 2px solid #000;
+  height: auto !important;
+}
+.page-sp-osteva-y .cruel-irony-section .hyphenate i {
+  font-family: var(--font-nantes-italic) !important;
+  font-style: italic !important;
+}
+.page-sp-osteva-y .cruel-irony-section .prose > :last-child {
+  margin-block-start: 0;
+}
+.page-sp-osteva-y .cruel-irony-section .diff-font-style {
+  font-family: var(--font-nantes-italic);
+  font-style: italic;
+  font-size: 20px;
+}
+.page-sp-osteva-y .lp-testimonials .prose p,
+.page-sp-osteva-lumbar .lp-testimonials .prose p,
+.page-sp-osteva-rct .lp-testimonials .prose p {
+  color: var(--custom-black);
+}
+.osteva-y-image-overlay .h2 i,
+.page-sp-osteva-y .sp-osteva-y-inc .h2 i,
+.page-sp-osteva-y .h2 i,
+.page-sp-osteva-lumbar .h2 i,
+.page-sp-osteva-rct .h2 i {
+  font-family: var(--font-nantes-italic) !important;
+  font-style: italic !important;
+}
+.page-sp-osteva-y .gt-cause-section.osteva-y-mbg .content-btn-div p,
+.page-sp-osteva-lumbar .gt-cause-section.osteva-y-mbg .content-btn-div p,
+.page-sp-osteva-rct .gt-cause-section.osteva-y-mbg .content-btn-div p {
+  color: var(--primary-bg-color) !important;
+}
+.page-sp-osteva-y .managing-pain-section .content-btn-div,
+.page-sp-osteva-lumbar .managing-pain-section .content-btn-div,
+.page-sp-osteva-rct .managing-pain-section .content-btn-div {
+  color: var(--custom-black);
+}
+.page-sp-osteva-y .managing-pain-section ul,
+.page-sp-osteva-lumbar .managing-pain-section ul,
+.page-sp-osteva-rct .managing-pain-section ul {
+  gap: 0;
+}
+.page-sp-osteva-y .managing-pain-section ul li,
+.page-sp-osteva-lumbar .managing-pain-section ul li,
+.page-sp-osteva-rct .managing-pain-section ul li {
+  position: relative;
+  list-style: none;
+  margin-top: var(--spacing-5);
+  padding-left: var(--spacing-6-5);
+  padding-bottom: var(--spacing-4-5);
+  border-bottom: 1px solid var(--custom-black);
+}
+.page-sp-osteva-y .managing-pain-section ul li:before,
+.page-sp-osteva-lumbar .managing-pain-section ul li:before,
+.page-sp-osteva-rct .managing-pain-section ul li:before {
+  content: "\2705";
+  position: absolute;
+  left: -0.2em;
+  top: 0.2em;
+  font-size: 20px;
+  line-height: 1;
+  color: #27a267;
+  font-weight: 700;
+  background: none;
+  width: auto;
+  height: auto;
+  min-width: var(--spacing-4);
+}
+.page-sp-osteva-lumbar .osteva-banner .subheading {
+  color: var(--primary-color);
+}
+.page-sp-osteva-lumbar
+  .gt-cause-section.lumber-tendinopathy-section
+  .media-with-text__media {
+  display: block;
+  align-self: center;
+}
+.page-sp-osteva-lumbar
+  .gt-cause-section.lumber-tendinopathy-section
+  .media-with-text__media
+  img {
+  border: 1px solid var(--primary-color);
+}
+.page-sp-osteva-lumbar .collagen-powder-section .section--note p:last-of-type,
+.page-sp-osteva-rct .collagen-powder-section .section--note p:last-of-type {
+  margin-block-start: var(--spacing-4) !important;
+}
+.page-sp-osteva-lumbar .progress-timeline-stage__media img,
+.page-sp-osteva-rct .progress-timeline-stage__media img {
+  border: 1.5px solid var(--custom-black);
+}
+.page-sp-osteva-rct .wear-tear-problem--section .info-card-grid-content em {
+  font-family: var(--font-nantes-italic);
+  color: var(--primary-color) !important;
+}
+.page-sp-osteva-rct .wear-tear-problem--section .info-card-grid-content {
+  color: var(--custom-black) !important;
+}
+.page-sp-osteva-rct .wear-tear-problem--section .info-card-grid__icon img {
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+.page-sp-osteva-rct .why-cant-fix--section .h2 {
+  color: var(--primary-color);
+  text-align: right;
+}
+.page-sp-osteva-rct .why-cant-fix--section h3 {
+  font-weight: 400;
+  font-family: var(--font-ppmori);
+  border-top: var(--custom-black) 1px solid;
+  padding-block-start: var(--spacing-12);
+  padding-block-end: var(--spacing-2);
+}
+@media (max-width: 800px) {
+  .page-sp-osteva-rct .why-cant-fix--section h3 {
+    padding-inline-start: 1.6em;
+    text-indent: -1.4em;
+  }
+}
+.page-sp-osteva-rct .why-cant-fix--section * + :is(h3) {
+  margin-block-start: var(--spacing-12);
+}
+.page-sp-osteva-rct .why-cant-fix--section p {
+  margin-inline-start: var(--spacing-14);
+  margin-block-start: 0;
+}
+.page-sp-osteva-rct .why-cant-fix--section .promo_text {
+  justify-self: center;
+  margin-inline-start: 0;
+  background-color: var(--custom-black);
+  width: fit-content;
+  padding: var(--spacing-2) var(--spacing-8);
+  color: #fff;
+  border-radius: var(--spacing-2);
+}
+@media only screen and (max-width: 768px) {
+  main.page-sp-osteva-lumbar
+    .shopify-section--rich-text
+    .rich-text__wrapper
+    .prose,
+  main.page-sp-osteva-rct
+    .shopify-section--rich-text
+    .rich-text__wrapper
+    .prose {
+    justify-items: stretch;
+  }
+  .page-sp-provitalean-gut-suppor .pro-vs-without .rich-text__wrapper .prose p {
+    text-align: left;
+  }
+  .page-sp-provitalean-gut-suppor
+    .pro-vs-without
+    .rich-text__wrapper
+    .prose
+    div:first-of-type {
+    text-align: left;
+  }
+  .page-sp-provitalean-gut-suppor
+    .pro-vs-without
+    .rich-text__wrapper
+    .prose
+    div:first-of-type,
+  .page-sp-provitalean-gut-suppor
+    .pro-vs-without
+    .rich-text__wrapper
+    .prose
+    img {
+    width: 100%;
+  }
+  .page-sp-provitalean-gut-suppor .gut-support-hiw .media-with-text__media img {
+    object-fit: contain;
+  }
+  .page-sp-provitalean-gut-suppor .gut-support-hiw .media-with-text__item {
+    display: grid;
+    grid-template-areas: "content" "media";
+  }
+  .page-sp-provitalean-gut-suppor .gut-support-hiw .media-with-text__media {
+    grid-area: media;
+  }
+  .page-sp-provitalean-gut-suppor .gut-support-hiw .media-with-text__content {
+    grid-area: content;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .page-sp-provitalean-gut-suppor .first-90-days-confidence .section-header,
+  .page-sp-provitalean-gut-suppor .first-90-days-confidence .section-header h2 {
+    text-align: left;
+  }
+  .page-sp-provitalean-gut-suppor .take-pro-ozempic-glp1 .media-with-text h2,
+  .page-sp-provitalean-gut-suppor
+    .sp-provitalean-gut-support-ozempic
+    .media-with-text
+    h2,
+  .page-sp-provitalean-gut-suppor
+    .gut-bacterial-burnout
+    .rich-text__wrapper
+    .prose
+    p {
+    text-align: left !important;
+  }
+  .page-sp-provitalean-gut-suppor
+    .take-pro-ozempic-glp1
+    .media-with-text__content {
+    padding: 0;
+  }
+  .page-sp-provitalean-gut-suppor
+    .real-women-video-testimonials
+    .section-header
+    .prose {
+    align-items: start;
+  }
+  .page-sp-provitalean-gut-suppor
+    .real-women-video-testimonials
+    .section-header
+    p {
+    margin-top: 2%;
+  }
+  .page-sp-provitalean-gut-suppor .wean-to-lean-section,
+  .page-sp-provitalean-gut-suppor .wean-to-lean-section .bottom-section {
+    gap: var(--spacing-8) !important;
+  }
+  .page-sp-provitalean-gut-suppor
+    .wean-to-lean-section
+    .left-side
+    .image-container {
+    margin-bottom: var(--spacing-8) !important;
+  }
+  .page-sp-provitalean-gut-suppor
+    .wean-to-lean-section
+    .left-side
+    .image-container
+    img {
+    margin: auto !important;
+  }
+  .page-sp-provitalean-gut-suppor
+    .wean-to-lean-section
+    .left-side
+    .text-top-left {
+    order: 1 !important;
+  }
+  .page-sp-provitalean-gut-suppor
+    .wean-to-lean-section
+    .left-side
+    .text-bottom-left {
+    order: 3 !important;
+  }
+  .page-sp-provitalean-gut-suppor
+    .wean-to-lean-section
+    .left-side
+    .text-bottom-right {
+    order: 4 !important;
+  }
+  .page-sp-provitalean-gut-suppor
+    .wean-to-lean-section
+    .left-side
+    .text-overlay {
+    text-align: start !important;
+    background-color: unset !important;
+    border: unset !important;
+    margin-bottom: 2% !important;
+  }
+  .page-sp-provitalean-gut-suppor
+    .wean-to-lean-section
+    .left-side
+    .text-overlay:not(:last-child):after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: var(--primary-color);
+    margin: 10px 0;
+  }
+  .page-sp-provitalean-gut-suppor .wean-to-lean-section .right-side {
+    text-align: start !important;
+  }
+  .page-sp-provitalean-gut-suppor
+    .sp-provitalean-gut-support-ozempic
+    .media-with-text
+    h2 {
+    color: #000 !important;
+  }
+  .page-sp-provitalean-gut-suppor
+    .sp-provitalean-gut-support-ozempic
+    .media-with-text__content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .page-sp-provitalean-gut-suppor
+    .good-news-glp1-results
+    .place-self-start-center {
+    width: 100%;
+    align-self: stretch;
+    justify-self: stretch;
+    display: flex;
+  }
+  .page-sp-provitalean-gut-suppor
+    .good-news-glp1-results
+    .place-self-start-center
+    .prose {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  .page-sp-provitalean-gut-suppor
+    .good-news-glp1-results
+    .place-self-start-center
+    p {
+    text-align: start;
+  }
+  .page-sp-provitalean-gut-suppor
+    .good-news-glp1-results
+    .place-self-start-center
+    ul {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 1.25rem;
+    text-align: start;
+  }
+  .page-sp-provitalean-gut-suppor .lp-testimonials .prose,
+  .page-sp-provitalean-gut-suppor .lp-testimonials .prose .h2,
+  .page-sp-provitalean-gut-suppor .ingredients-section .prose .h2 {
+    text-align: start;
+  }
+  .page-sp-provitalean-gut-suppor
+    .gut-support-ozempic-results
+    .media-with-text__content
+    .content-btn-div {
+    padding-top: 0;
+  }
+  .page-sp-osteva-tendinopathy .osteva-banner .media-with-text .h2,
+  .page-sp-osteva-tendinopathy .osteva-banner .media-with-text .subheading,
+  .page-sp-osteva-rct .osteva-banner .media-with-text .h2,
+  .page-sp-osteva-rct .osteva-banner .media-with-text .subheading,
+  .page-sp-osteva-tendinopathy-sns .osteva-banner .media-with-text .h2,
+  .page-sp-osteva-tendinopathy-sns .osteva-banner .media-with-text .subheading {
+    text-align: center;
+  }
+  .page-sp-osteva-tendinopathy
+    .osteva-banner
+    .media-with-text
+    .content-btn-div
+    .btn-center
+    .button,
+  .page-sp-osteva-lumbar
+    .osteva-banner
+    .media-with-text
+    .content-btn-div
+    .btn-center
+    .button,
+  .page-sp-osteva-rct
+    .osteva-banner
+    .media-with-text
+    .content-btn-div
+    .btn-center
+    .button,
+  .page-sp-osteva-tendinopathy .osteva-capsule-section .content-btn-div .button,
+  .page-sp-osteva-tendinopathy .lp-testimonials .section-stack .read-button a,
+  .page-sp-osteva-lumbar .lp-testimonials .section-stack .read-button a,
+  .page-sp-osteva-tendinopathy
+    .card-compare-section
+    .card-compare-section__button
+    a,
+  .page-sp-osteva-lumbar .card-compare-section .card-compare-section__button a,
+  .page-sp-osteva-tendinopathy
+    .collagen-fortifier-section
+    .media-with-text
+    .media-with-text__content
+    .prose
+    .content-btn-div
+    .button,
+  .page-sp-osteva-tendinopathy-sns
+    .osteva-banner
+    .media-with-text
+    .content-btn-div
+    .btn-center
+    .button,
+  .page-sp-osteva-tendinopathy-sns
+    .osteva-capsule-section
+    .content-btn-div
+    .button,
+  .page-sp-osteva-tendinopathy-sns
+    .lp-testimonials
+    .section-stack
+    .read-button
+    a,
+  .page-sp-osteva-tendinopathy-sns
+    .card-compare-section
+    .card-compare-section__button
+    a,
+  .page-sp-osteva-tendinopathy-sns
+    .collagen-fortifier-section
+    .media-with-text
+    .media-with-text__content
+    .prose
+    .content-btn-div
+    .button,
+  .page-sp-osteva-rct .card-compare-section .card-compare-section__button a,
+  .page-sp-osteva-rct
+    .collagen-fortifier-section
+    .media-with-text
+    .media-with-text__content
+    .prose
+    .content-btn-div
+    .button {
+    width: 100%;
+  }
+  .page-sp-osteva-tendinopathy .gt-cause-section .media-with-text .h2,
+  .page-sp-osteva-tendinopathy .save-with-bundle-osteva .media-with-text .h2,
+  .page-sp-osteva-tendinopathy .osteva-capsule-section .media-with-text .h2,
+  .page-sp-osteva-lumbar .osteva-capsule-section .media-with-text .h2,
+  .page-sp-osteva-rct .osteva-capsule-section .media-with-text .h2,
+  .page-sp-osteva-tendinopathy .collagen-fortifier-section .media-with-text .h2,
+  .page-sp-osteva-tendinopathy-sns .gt-cause-section .media-with-text .h2,
+  .page-sp-osteva-tendinopathy-sns
+    .save-with-bundle-osteva
+    .media-with-text
+    .h2,
+  .page-sp-osteva-tendinopathy-sns .osteva-capsule-section .media-with-text .h2,
+  .page-sp-osteva-tendinopathy-sns
+    .collagen-fortifier-section
+    .media-with-text
+    .h2 {
+    text-align: left !important;
+  }
+  .page-sp-osteva-tendinopathy
+    .gt-cause-section
+    .media-with-text
+    .media-with-text__item
+    .media-with-text__content,
+  .page-sp-osteva-tendinopathy
+    .save-with-bundle-osteva
+    .media-with-text
+    .media-with-text__item
+    .media-with-text__content,
+  .page-sp-osteva-tendinopathy-sns
+    .gt-cause-section
+    .media-with-text
+    .media-with-text__item
+    .media-with-text__content,
+  .page-sp-osteva-tendinopathy-sns
+    .save-with-bundle-osteva
+    .media-with-text
+    .media-with-text__item
+    .media-with-text__content {
+    display: block;
+  }
+  .page-sp-osteva-tendinopathy .collagen-degen-hotspots .prose .mobile-only,
+  .page-sp-osteva-tendinopathy-sns
+    .collagen-degen-hotspots
+    .prose
+    .mobile-only {
+    text-align: center;
+  }
+  .page-sp-osteva-tendinopathy
+    .otc-meds-section
+    .media-with-text.layout_2
+    .media-with-text__content,
+  .page-sp-osteva-tendinopathy
+    .collagen-fortifier-section
+    .media-with-text
+    .media-with-text__content
+    .prose
+    .content-btn-div
+    .image-bullet-list,
+  .page-sp-osteva-tendinopathy-sns
+    .otc-meds-section
+    .media-with-text.layout_2
+    .media-with-text__content,
+  .page-sp-osteva-tendinopathy-sns
+    .collagen-fortifier-section
+    .media-with-text
+    .media-with-text__content
+    .prose
+    .content-btn-div
+    .image-bullet-list {
+    display: none;
+  }
+  .page-sp-osteva-tendinopathy
+    .otc-meds-section
+    .media-with-text.layout_2
+    .media-with-text__item
+    .layout_2
+    .mobile-content
+    p,
+  .page-sp-osteva-tendinopathy-sns
+    .otc-meds-section
+    .media-with-text.layout_2
+    .media-with-text__item
+    .layout_2
+    .mobile-content
+    p {
+    line-height: 1.1;
+    font-style: var(--heading-font-style);
+    letter-spacing: var(--heading-letter-spacing);
+    text-transform: var(--heading-text-transform);
+    overflow-wrap: anywhere;
+    font-size: var(--font-size-h1) !important;
+    color: var(--primary-color);
+    font-family: var(--font-nantes);
+  }
+  .page-sp-osteva-tendinopathy
+    .otc-meds-section
+    .media-with-text.layout_2
+    .media-with-text__item
+    .layout_2
+    .mobile-content
+    p
+    em,
+  .page-sp-osteva-tendinopathy-sns
+    .otc-meds-section
+    .media-with-text.layout_2
+    .media-with-text__item
+    .layout_2
+    .mobile-content
+    p
+    em {
+    font-family: var(--font-nantes-italic) !important;
+    font-style: italic !important;
+  }
+  .page-sp-osteva-tendinopathy .lp-testimonials .section-header .prose,
+  .page-sp-osteva-tendinopathy .lp-testimonials .section-header .prose h2,
+  .page-sp-osteva-lumbar .lp-testimonials .section-header .prose,
+  .page-sp-osteva-lumbar .lp-testimonials .section-header .prose h2,
+  .page-sp-osteva-rct .lp-testimonials .section-header .prose,
+  .page-sp-osteva-rct .lp-testimonials .section-header .prose h2,
+  .page-sp-osteva-tendinopathy-sns .lp-testimonials .section-header .prose,
+  .page-sp-osteva-tendinopathy-sns .lp-testimonials .section-header .prose h2 {
+    text-align: left;
+  }
+  .page-sp-osteva-tendinopathy
+    .collagen-fortifier-section
+    .media-with-text
+    .media-with-text__item
+    .media-with-text__content,
+  .page-sp-osteva-tendinopathy-sns
+    .collagen-fortifier-section
+    .media-with-text
+    .media-with-text__item
+    .media-with-text__content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .page-sp-osteva-tendinopathy
+    .collagen-fortifier-section
+    .media-with-text
+    .media-with-text__content
+    .prose,
+  .page-sp-osteva-tendinopathy-sns
+    .collagen-fortifier-section
+    .media-with-text
+    .media-with-text__content
+    .prose {
+    width: 100%;
+  }
+  .page-sp-osteva-tendinopathy
+    .collagen-fortifier-section
+    .media-with-text
+    .media-with-text__content
+    .prose
+    .content-btn-div,
+  .page-sp-osteva-tendinopathy-sns
+    .collagen-fortifier-section
+    .media-with-text
+    .media-with-text__content
+    .prose
+    .content-btn-div {
+    padding: 0%;
+  }
+  .page-sp-osteva-tendinopathy
+    .collagen-degen-hotspots
+    .section-stack
+    .section-header
+    .prose,
+  .page-sp-osteva-tendinopathy-sns
+    .collagen-degen-hotspots
+    .section-stack
+    .section-header
+    .prose {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .page-sp-osteva-sns .osteva-banner .media-with-text__media > *,
+  .page-sp-osteva-tendinopathy .osteva-banner .media-with-text__media > *,
+  .page-sp-osteva-rct .osteva-banner .media-with-text__media > *,
+  .page-sp-osteva-tendinopathy-sns .osteva-banner .media-with-text__media > * {
+    object-position: top;
+  }
+  .page-sp-osteva-sns .osteva-banner .media-with-text__content {
+    padding-block-start: var(--spacing-24);
+    padding-block-end: 0;
+  }
+  .page-sp-osteva-sns .osteva-banner .h2 {
+    font-size: 4rem;
+    margin: 0;
+  }
+  .page-sp-osteva-sns .osteva-banner .ribbon,
+  .page-sp-osteva-tendinopathy .osteva-banner .ribbon,
+  .page-sp-osteva-tendinopathy-sns .osteva-banner .ribbon {
+    font-size: 2rem;
+  }
+  .page-sp-osteva-sns .lp-testimonials .prose p {
+    color: var(--custom-black);
+  }
+  .page-sp-osteva-sns .osteva-banner .content-btn-div,
+  .page-sp-osteva-tendinopathy .osteva-banner .content-btn-div,
+  .page-sp-osteva-tendinopathy-sns .osteva-banner .content-btn-div,
+  .page-sp-osteva-lumbar .osteva-banner .content-btn-div,
+  .page-sp-osteva-rct .osteva-banner .content-btn-div {
+    margin-block-start: var(--spacing-10);
+  }
+  .page-sp-osteva-tendinopathy
+    .osteva-banner
+    .media-with-text
+    .media-with-text__item,
+  .page-sp-osteva-tendinopathy-sns
+    .osteva-banner
+    .media-with-text
+    .media-with-text__item,
+  .page-sp-osteva-lumbar .osteva-banner .media-with-text .media-with-text__item,
+  .page-sp-osteva-tendinopathy
+    .gt-cause-section
+    .media-with-text
+    .media-with-text__item,
+  .page-sp-osteva-tendinopathy-sns
+    .gt-cause-section
+    .media-with-text
+    .media-with-text__item,
+  .page-sp-osteva-lumbar
+    .gt-cause-section
+    .media-with-text
+    .media-with-text__item {
+    gap: 7%;
+  }
+  .page-sp-osteva-y .osteva-banner .media-with-text__content {
+    padding-inline: 0;
+    padding-block: 0;
+  }
+  .page-sp-osteva-y .gt-cause-section .media-with-text__media > *,
+  .page-sp-osteva-lumbar .gt-cause-section .media-with-text__media > *,
+  .page-sp-osteva-rct .gt-cause-section .media-with-text__media > * {
+    object-fit: contain;
+  }
+  .page-sp-osteva-y .gt-cause-section.osteva-y-mbg img,
+  .page-sp-osteva-lumbar .gt-cause-section.osteva-y-mbg img,
+  .page-sp-osteva-rct .gt-cause-section.osteva-y-mbg img {
+    max-width: 500px;
+  }
+  .page-sp-provitalean-gut-suppor .good-news-glp1-results {
+    padding-inline-end: 0;
+  }
+  .page-sp-provitalean-gut-suppor .good-news-glp1-results .prose ul li {
+    line-height: 1;
+    padding-bottom: 2.5%;
+    margin-bottom: 2.5%;
+  }
+  .page-sp-osteva-lumbar .info-card-grid__body {
+    align-self: start;
+    min-height: var(--spacing-24);
+  }
+  .page-sp-osteva-rct .info-card-grid__body {
+    align-self: start;
+    min-height: var(--spacing-14);
+  }
+  .page-sp-osteva-rct .why-cant-fix--section .content-btn-div {
+    margin-block-start: var(--spacing-10);
+  }
+  .page-sp-osteva-rct .why-cant-fix--section h3 {
+    font-size: 40px !important;
+  }
+  .page-sp-osteva-rct .wear-tear-problem--section .info-card-grid__icon img {
+    width: 70px !important;
+    height: 70px !important;
+  }
+}
+@media only screen and (min-width: 1495px) {
+  .page-sp-osteva-sns .osteva-banner .media-with-text__media > *,
+  .page-sp-osteva-tendinopathy .osteva-banner .media-with-text__media > *,
+  .page-sp-osteva-tendinopathy-sns .osteva-banner .media-with-text__media > *,
+  .page-sp-osteva-lumbar .osteva-banner .media-with-text__media > *,
+  .page-sp-osteva-rct .osteva-banner .media-with-text__media > * {
+    object-fit: contain;
+  }
+}
+@media only screen and (max-width: 999px) {
+  .prose h2,
+  h2 {
+    text-align: center;
+  }
+  .sp-provitalean--hero-banner .media-with-text__content h2 {
+    font-size: 38px;
+  }
+  .sp-provitalean--hero-banner .media-with-text .subheading i {
+    font-family: var(--font-nantes-italic) !important;
+    font-style: italic !important;
+  }
+  .rejuveen-disclaimer .media-with-text__content .place-self-center-end,
+  .footer .h3,
+  .footer .text-subdued {
+    text-align: center;
+  }
+  .rejuveen-disclaimer .media-with-text__media,
+  .rejuveen-disclaimer .media-with-text__content {
+    margin: 0 auto;
+  }
+  .footer .text-subdued {
+    text-align: center;
+  }
+  .footer .v-stack {
+    max-width: 100%;
+  }
+  .footer__block--menu .v-stack {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer__block-list {
+    grid: auto-flow dense / repeat(1, minmax(0, 1fr));
+  }
+  .content-btn-div {
+    padding-block-start: var(--spacing-6);
+    padding-block-end: var(--spacing-6);
+  }
+  .rejuveen-disclaimer .content-btn-div {
+    text-align: center;
+  }
+  .mobile-br {
+    display: block;
+  }
+  .price-table-v2 {
+    padding: 0% !important;
+  }
+  .price-table-v2 .pricing-sticker {
+    transform: scale(1) rotate(-10deg) !important;
+    top: 15dvh !important;
+    left: -40px !important;
+    padding: 20px !important;
+  }
+  .price-table-cards-container .card-row-image {
+    padding-top: 15%;
+  }
+  .sp-provitalean--full-section {
+    padding-block-start: calc(
+      var(--background-differs-from-previous) *
+        var(--calculated-section-spacing-block-start)
+    );
+    padding-block-end: var(--calculated-section-spacing-block-end);
+  }
+  .sp-provitalean--full-section .media-with-text {
+    max-height: 100%;
+  }
+  .sp-provitalean--full-section .media-with-text__media > img {
+    padding: var(--spacing-8);
+  }
+  .sp-provitalean--hero-banner .media-with-text__content .prose,
+  .sp-provitalean--full-section .media-with-text__content .prose {
+    place-self: center;
+  }
+  .sp-provitalean--hero-banner
+    .media-with-text__content
+    .prose
+    .content-btn-div
+    .btn-center,
+  .sp-provitalean--full-section
+    .media-with-text__content
+    .prose
+    .content-btn-div
+    .btn-center,
+  .sp-provitalean--with-gap-section
+    .media-with-text__content
+    .prose
+    .content-btn-div
+    .btn-center {
+    text-align: center;
+  }
+  .sp-provitalean--hero-banner .media-with-text .subheading {
+    text-align: center;
+    font-family: var(--font-nantes) !important;
+    color: var(--primary-color);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .scroll-arrow {
+    top: 60%;
+    transform: translateY(-60%);
+    background-color: #0006;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  .scroll-arrow svg {
+    width: 20px;
+    height: 20px;
+  }
+  .scroll-arrow.right {
+    right: 2%;
+  }
+  .scroll-arrow.left {
+    left: 2%;
+  }
+  .scroll-arrow.arrow-right {
+    right: 2%;
+  }
+  .scroll-arrow.arrow-left {
+    left: 2%;
+  }
+  .page-sp-uflora-hydration h2,
+  .page-sp-uflora-infection h2 {
+    font-size: 33px;
+  }
+  .page-sp-uflora-hydration .media-text-section {
+    gap: var(--spacing-6);
+  }
+  .page-sp-uflora-hydration .tab-section .arrow {
+    background-color: #f5e8f1 !important;
+    top: 55% !important;
+  }
+  .page-sp-uflora-hydration .tab-section .arrow svg {
+    stroke: #7b133b !important;
+  }
+  .uflora-experience-section .media-with-text__content {
+    padding: 0;
+  }
+  .uflora-experience-section .content-btn-div {
+    padding-block: 0;
+  }
+  .uflora-experience-section .content-btn-div .promo_text {
+    font-family: var(--font-ppmori-semibold);
+    font-weight: 400;
+    color: #7b133b;
+  }
+  .uflora-experience-section .content-btn-div .btn-center {
+    justify-self: center;
+  }
+  .page-sp-uflora-hydration .media-with-text > h2,
+  .page-sp-uflora-hydration .provitalean-glp1support-multicolumn h2 {
+    color: #7b133b !important;
+  }
+  .uflora-benefit-section .benefits-wrapper {
+    flex-direction: column-reverse;
+  }
+  .synergistic-section .accordion-box {
+    padding: 0;
+  }
+  .synergistic-section .accordion__question-image img {
+    width: 90%;
+    height: 90%;
+  }
+  .page-sp-uflora-hydration
+    .shopify-section--accordion-content
+    .accordion__toggle
+    span,
+  .page-sp-uflora-infection
+    .shopify-section--accordion-content
+    .accordion__toggle
+    span {
+    padding: 4% 12%;
+    font-size: 20px;
+  }
+  .uflora-infection-stack-section {
+    gap: var(--spacing-6) !important;
+  }
+  .uflora-infection-stack-section .media-text-section__subheading {
+    display: block;
+  }
+  .uflora-infection-stack-section .media-text-section__side-content {
+    display: none;
+  }
+  .uflora-icon-section .image-icon {
+    max-width: 120px;
+  }
+  .page-sp-osteva-gt .h2 {
+    text-align: left !important;
+  }
+  .page-sp-osteva-gt .osteva-banner .subheading,
+  .page-sp-osteva-tendinopathy .osteva-banner .subheading,
+  .page-sp-osteva-rct .osteva-banner .subheading,
+  .page-sp-osteva-tendinopathy-sns .osteva-banner .subheading {
+    color: var(--primary-color);
+  }
+  .page-sp-osteva-gt .osteva-banner .media-with-text__content,
+  .page-sp-osteva-tendinopathy .osteva-banner .media-with-text__content,
+  .page-sp-osteva-rct .osteva-banner .media-with-text__content,
+  .page-sp-osteva-tendinopathy-sns .osteva-banner .media-with-text__content {
+    padding: 0;
+  }
+  .page-sp-osteva-gt .osteva-banner .media-with-text__content .btn-center,
+  .page-sp-osteva-tendinopathy
+    .osteva-banner
+    .media-with-text__content
+    .btn-center,
+  .page-sp-osteva-rct .osteva-banner .media-with-text__content .btn-center,
+  .page-sp-osteva-tendinopathy-sns
+    .osteva-banner
+    .media-with-text__content
+    .btn-center {
+    text-align: center;
+  }
+  .page-sp-osteva-gt .collagen-powder-section .section-header,
+  .page-sp-osteva-gt .card-compare-section__subtitle {
+    text-align: left !important;
+  }
+  .page-sp-osteva-gt .card-compare-section__body ul,
+  .page-sp-osteva-tendinopathy .card-compare-section__body ul,
+  .page-sp-osteva-tendinopathy-sns .card-compare-section__body ul,
+  .page-sp-osteva-lumbar .card-compare-section__body ul,
+  .page-sp-osteva-rct .card-compare-section__body ul {
+    padding-left: 0;
+    padding-bottom: var(--spacing-5);
+  }
+  .page-sp-osteva-gt .card-compare-section__body ul li,
+  .page-sp-osteva-tendinopathy .card-compare-section__body ul li,
+  .page-sp-osteva-tendinopathy-sns .card-compare-section__body ul li,
+  .page-sp-osteva-rct .card-compare-section__body ul li {
+    padding-left: var(--spacing-8) !important;
+    padding-block: var(--spacing-5) !important;
+    font-size: 13px;
+  }
+  .page-sp-osteva-gt .layout-2 .card-compare-section__content ul li:before,
+  .page-sp-osteva-tendinopathy
+    .layout-2
+    .card-compare-section__content
+    ul
+    li:before,
+  .page-sp-osteva-tendinopathy-sns
+    .layout-2
+    .card-compare-section__content
+    ul
+    li:before,
+  .page-sp-osteva-rct .layout-2 .card-compare-section__content ul li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: var(--spacing-5);
+    height: var(--spacing-5);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .page-sp-osteva-gt .gt-cause-section .media-with-text__content,
+  .page-sp-osteva-tendinopathy .gt-cause-section .media-with-text__content,
+  .page-sp-osteva-tendinopathy-sns .gt-cause-section .media-with-text__content {
+    display: none;
+  }
+  .page-sp-osteva-gt .otc-meds-section .media-with-text__content .prose,
+  .page-sp-osteva-tendinopathy
+    .otc-meds-section
+    .media-with-text__content
+    .prose,
+  .page-sp-osteva-tendinopathy-sns
+    .otc-meds-section
+    .media-with-text__content
+    .prose {
+    gap: 0 !important;
+    text-align: left !important;
+  }
+  .page-sp-osteva-gt
+    .otc-meds-section
+    .media-with-text__content
+    .content-btn-div,
+  .page-sp-osteva-tendinopathy
+    .otc-meds-section
+    .media-with-text__content
+    .content-btn-div,
+  .page-sp-osteva-tendinopathy-sns
+    .otc-meds-section
+    .media-with-text__content
+    .content-btn-div {
+    padding-block: 0;
+  }
+  .mbg-logo-section .media-text-section__content {
+    text-align: left !important;
+  }
+  .osteva-capsule-section .media-with-text__content {
+    padding: 0;
+  }
+  .mbg-logo-section .media-text-section__image img {
+    max-width: 65%;
+  }
+  .osteva-capsule-section .btn-center {
+    text-align: center;
+  }
+  .page-sp-osteva-sns h2 {
+    text-align: left;
+  }
+  .page-sp-osteva-sns .price-table-heading h2 {
+    text-align: center;
+    padding-inline: 5%;
+  }
+  .page-sp-osteva-sns .osteva-banner h2 {
+    text-align: left !important;
+  }
+  .page-sp-osteva-sns .osteva-banner .subheading,
+  .page-sp-osteva-tendinopathy .osteva-banner .subheading,
+  .page-sp-osteva-rct .osteva-banner .subheading,
+  .page-sp-osteva-tendinopathy-sns .osteva-banner .subheading {
+    color: var(--primary-color);
+  }
+  .page-sp-osteva-sns .osteva-banner {
+    margin-block-start: var(--spacing-6);
+  }
+  .page-sp-osteva-sns
+    .osteva-banner
+    .image-bullet-list
+    li
+    .page-sp-osteva-tendinopathy
+    .osteva-banner
+    .image-bullet-list
+    li,
+  .page-sp-osteva-rct .osteva-banner .image-bullet-list li,
+  .page-sp-osteva-tendinopathy-sns .osteva-banner .image-bullet-list li {
+    align-items: center;
+  }
+  .page-sp-osteva-sns .osteva-banner .media-with-text__content,
+  .page-sp-osteva-tendinopathy .osteva-banner .media-with-text__content,
+  .page-sp-osteva-rct .osteva-banner .media-with-text__content,
+  .page-sp-osteva-tendinopathy-sns .osteva-banner .media-with-text__content {
+    padding: 0 !important;
+  }
+  .page-sp-osteva-sns .osteva-banner .content-btn-div,
+  .page-sp-osteva-tendinopathy .osteva-banner .content-btn-div,
+  .page-sp-osteva-tendinopathy-sns .osteva-banner .content-btn-div,
+  .page-sp-osteva-lumbar .osteva-banner .content-btn-div,
+  .page-sp-osteva-rct .osteva-banner .content-btn-div {
+    padding-block: 0;
+  }
+  .page-sp-osteva-sns .osteva-banner .btn-center,
+  .page-sp-osteva-tendinopathy .osteva-banner .btn-center,
+  .page-sp-osteva-rct .osteva-banner .btn-center,
+  .page-sp-osteva-tendinopathy-sns .osteva-banner .btn-center {
+    padding-block-start: var(--spacing-6);
+    text-align: center;
+  }
+  .page-sp-osteva-sns
+    .collagen-fortifier-section
+    .media-text-section__image
+    img,
+  .page-sp-osteva-tendinopathy
+    .collagen-fortifier-section
+    .media-text-section__image
+    img,
+  .page-sp-osteva-tendinopathy-sns
+    .collagen-fortifier-section
+    .media-text-section__image
+    img {
+    max-width: 100%;
+  }
+  .page-sp-osteva-y .gt-cause-section .media-with-text > h2,
+  .page-sp-osteva-rct .gt-cause-section .media-with-text > h2 {
+    text-align: left !important;
+  }
+  .page-sp-osteva-y .gt-cause-section .media-with-text,
+  .page-sp-osteva-rct .gt-cause-section .media-with-text {
+    gap: var(--spacing-12);
+  }
+  .page-sp-osteva-y .gt-cause-section .media-with-text__content,
+  .page-sp-osteva-y .osteva-banner .media-with-text__content,
+  .page-sp-osteva-rct .gt-cause-section .media-with-text__content {
+    padding: 0;
+  }
+  .page-sp-osteva-y .osteva-banner .media-with-text__item {
+    grid-template: "content" "media" / auto;
+  }
+  .page-sp-osteva-y .osteva-banner .btn-center {
+    text-align: center;
+    margin: 0 auto !important;
+  }
+  .page-sp-osteva-y .lp-testimonials .prose p {
+    text-align: left;
+  }
+  .page-sp-osteva-y .managing-pain-section .media-with-text__content,
+  .page-sp-osteva-lumbar .managing-pain-section .media-with-text__content,
+  .page-sp-osteva-rct .managing-pain-section .media-with-text__content {
+    padding: 0;
+  }
+  .page-sp-provitalean-gut-suppor .good-news-glp1-results {
+    overflow: visible;
+  }
+  .page-sp-provitalean-gut-suppor
+    .good-news-glp1-results
+    .media-with-text__media {
+    margin-inline-start: calc(-1 * var(--container-outer-width, 1.5rem));
+    margin-inline-end: calc(-1 * var(--container-outer-width, 1.5rem));
+    border-radius: 0;
+  }
+  .page-sp-provitalean-gut-suppor
+    .good-news-glp1-results
+    .media-with-text__media
+    img {
+    width: 100%;
+    display: block;
+  }
+  .page-sp-provitalean-gut-suppor
+    .good-news-glp1-results
+    .media-with-text__item {
+    gap: 2rem;
+  }
+  .page-sp-osteva-lumbar .info-card-grid__card,
+  .page-sp-osteva-rct .info-card-grid__card {
+    justify-items: left !important;
+    align-items: center !important;
+  }
+  .page-sp-osteva-lumbar .info-card-grid-heading,
+  .page-sp-osteva-lumbar .info-card-grid-section .h2,
+  .page-sp-osteva-lumbar .layout-2 .card-compare-section__header,
+  .page-sp-osteva-rct .layout-2 .card-compare-section__header {
+    text-align: left !important;
+  }
+  .page-sp-osteva-lumbar .osteva-banner .media-with-text > .h2 {
+    text-align: left !important;
+  }
+  .page-sp-osteva-lumbar .gt-cause-section .media-with-text > .h2,
+  .page-sp-osteva-rct .gt-cause-section .media-with-text > .h2 {
+    text-align: left !important;
+  }
+  .page-sp-osteva-lumbar .ingredients-section .h2,
+  .page-sp-osteva-rct .ingredients-section .h2 {
+    text-align: left;
+  }
+  .page-sp-osteva-lumbar .info-card-grid__card {
+    justify-items: left !important;
+    align-items: center !important;
+  }
+  .page-sp-osteva-lumbar .managing-pain-section .h2,
+  .page-sp-osteva-rct .managing-pain-section .h2 {
+    text-align: left !important;
+  }
+  .page-sp-osteva-lumbar .lumbar-td-section .btn-center {
+    text-align: center;
+  }
+  .page-sp-osteva-lumbar .lumbar-td-section p {
+    margin-block-start: var(--spacing-6) !important;
+  }
+  .page-sp-osteva-rct .why-cant-fix--section h3 {
+    font-size: 38px !important;
+  }
+  .page-sp-osteva-rct .why-cant-fix--section .h2 {
+    text-align: left !important;
+    padding-inline: var(--media-with-text-content-padding);
+  }
+  .page-sp-osteva-rct .wear-tear-problem--section .info-card-grid__icon img {
+    width: 40px !important;
+    height: 40px !important;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .page-sp-osteva-rct .wear-tear-problem--section .info-card-grid {
+    grid-template-columns: repeat(12, minmax(0, 1fr)) !important;
+  }
+  .page-sp-osteva-rct .wear-tear-problem--section .info-card-grid__card {
+    grid-column: span 3 !important;
+  }
+  .page-sp-osteva-rct
+    .wear-tear-problem--section
+    .info-card-grid__card:nth-child(1) {
+    grid-column: 2 / span 3 !important;
+  }
+  .page-sp-osteva-rct
+    .wear-tear-problem--section
+    .info-card-grid__card:nth-child(2) {
+    grid-column: 5 / span 3 !important;
+  }
+  .page-sp-osteva-rct
+    .wear-tear-problem--section
+    .info-card-grid__card:nth-child(3) {
+    grid-column: 8 / span 3 !important;
+  }
+  .page-sp-osteva-y .creatine-section {
+    padding-block: 0;
+  }
+  .page-sp-osteva-y
+    .creatine-section
+    .media-with-text__content
+    .media-with-text-heading {
+    display: block;
+    color: var(--primary-color);
+  }
+  .page-sp-osteva-y .creatine-section .prose h2 {
+    display: none;
+  }
+  .page-sp-osteva-y .creatine-section .media-with-text__content {
+    padding-inline: var(--media-with-text-content-padding) !important;
+    padding-block: var(--spacing-12) !important;
+  }
+  .page-sp-osteva-y .creatine-section .media-with-text,
+  .page-sp-osteva-y .creatine-section .media-with-text__item {
+    row-gap: 0;
+  }
+  .page-sp-osteva-y .creatine-section .media-with-text__media {
+    border-radius: 0 !important;
+  }
+  .page-sp-osteva-y .creatine-section .media-with-text__media img {
+    border-radius: 0 !important;
+    height: 100% !important;
+  }
+  .page-sp-osteva-lumbar .info-card-grid__header .prose p:last-of-type {
+    font-size: 26px;
+  }
+  .page-sp-osteva-lumbar .managing-pain-section .media-with-text__content,
+  .page-sp-osteva-rct .managing-pain-section .media-with-text__content {
+    padding-inline: var(--spacing-12) !important;
+    padding-block: 0;
+  }
+  .page-sp-osteva-lumbar .managing-pain-section .btn-center {
+    margin-block-start: var(--spacing-12) !important;
+  }
+  .page-sp-osteva-rct .multi-column__item {
+    position: relative;
+  }
+  .page-sp-osteva-rct .multi-column__item:after {
+    content: "+";
+    position: absolute;
+    left: calc(100% + (var(--gap) / 2));
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+  }
+  .page-sp-osteva-rct .multi-column__item:last-child:after {
+    content: "";
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .page-sp-osteva-y
+    .creatine-section
+    .media-with-text__content
+    .media-with-text-heading {
+    display: none;
+  }
+  .page-sp-osteva-y .creatine-section .prose h2 {
+    display: block;
+    text-align: left;
+  }
+  .page-sp-osteva-y .creatine-section .mobile-content ul {
+    padding-left: var(--spacing-4);
+    list-style: disc;
+  }
+  .page-sp-osteva-y .creatine-section .mobile-content {
+    padding-block: 0;
+  }
+  .page-sp-osteva-y
+    .creatine-section
+    .media-with-text__item
+    .layout_2:nth-of-type(1)
+    .mobile-content {
+    padding-block-end: var(--spacing-6);
+  }
+  .page-sp-osteva-y .creatine-section .layout_2 .mobile-content p:first-child {
+    margin-block-start: 0;
+  }
+  .page-sp-osteva-y .lp-testimonials .section-header h2,
+  .page-sp-osteva-y .sp-osteva-y-inc .h2 {
+    text-align: left;
+  }
+  .page-sp-osteva-y .osteva-lp-testimonials .h1 i,
+  .page-sp-osteva-rct .osteva-lp-testimonials .h1 i {
+    font-family: var(--font-nantes-italic) !important;
+    font-style: italic !important;
+  }
+  .page-sp-osteva-y .card-compare-section__title,
+  .page-sp-osteva-y .card-compare-section__subtitle {
+    text-align: left;
+  }
+  .page-sp-osteva-y .layout-2 .card-compare-section__card {
+    padding-block-end: var(--spacing-8) !important;
+  }
+  .page-sp-osteva-y .osteva-y-mbg img,
+  .page-sp-osteva-lumbar .osteva-y-mbg img,
+  .page-sp-osteva-rct .osteva-y-mbg img {
+    max-width: 100px;
+    margin: 0 auto;
+  }
+  .page-sp-osteva-y .osteva-y-mbg .media-with-text__content p,
+  .page-sp-osteva-lumbar .osteva-y-mbg .media-with-text__content p,
+  .page-sp-osteva-rct .osteva-y-mbg .media-with-text__content p {
+    text-align: center;
+  }
+  .page-sp-osteva-lumbar .info-card-grid__header .prose p:last-of-type {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 853px) {
+  .price-table-v2 .pricing-sticker {
+    transform: scale(1) rotate(-10deg) !important;
+    top: 18dvh !important;
+    left: -40px !important;
+    padding: 20px !important;
+  }
+}
+@media only screen and (max-width: 820px) {
+  .price-table-v2 .pricing-sticker {
+    transform: scale(1) rotate(-10deg) !important;
+    top: 16dvh !important;
+    left: -40px !important;
+    padding: 20px !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  :root {
+    --font-size-h0: 42px;
+    --font-size-h1: 40px;
+    --font-size-h2: 38px;
+    --font-size-h3: 20px;
+    --font-size-h4: 15px;
+    --font-size-subheading: 19px;
+  }
+  .desktop-only-br {
+    display: none;
+  }
+  .price-table-cards-container {
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-x: contain;
+    overflow: auto hidden;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding-bottom: 5%;
+  }
+  .price-table-v2__col {
+    flex: 0 0 calc(75% - 20px);
+  }
+  .price-table-v2__col:nth-child(2) {
+    margin-left: 5%;
+  }
+  .price-table-v2__col:nth-child(3) {
+    margin-right: 5%;
+  }
+  .price-table-v2 .pricing-sticker {
+    transform: scale(1.3) rotate(-10deg) !important;
+    top: 27dvh !important;
+    left: 110px !important;
+    padding: 20px;
+  }
+  .price-table-cards-container .card-row-image {
+    padding-top: 12%;
+  }
+  .price-table-cards-container .price-table__buy-container {
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  .price-table-v2 {
+    display: relative;
+  }
+  .price-table-heading,
+  .price-table-subheading {
+    width: 100%;
+  }
+  .free-shipping-container {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .scroll-arrow {
+    position: absolute;
+    top: 70%;
+    z-index: 10;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .scroll-arrow,
+  .scroll-arrow:focus,
+  .scroll-arrow:active {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .scroll-arrow.disabled {
+    display: none !important;
+  }
+  .sp-provitalean--full-section .prose .content-btn-div,
+  .sp-provitalean--with-gap-section .prose .content-btn-div {
+    padding-block-start: 0;
+  }
+  .sp-provitalean--full-section .prose .content-btn-div p,
+  .sp-provitalean--with-gap-section .prose .content-btn-div p {
+    display: block;
+    color: var(--custom-black);
+    font-size: 16px;
+    text-align: center;
+  }
+  .package-progress-steps p {
+    text-align: center;
+    font-size: 16px;
+  }
+  #ingredients-section,
+  #benefits,
+  #reviews {
+    scroll-margin-top: 100px;
+  }
+  .provitalean-glp1support-multicolumn .scroll-arrow,
+  .page-sp-provitalean-gut-suppor .real-women-video-testimonials .scroll-arrow {
+    top: 60%;
+  }
+  .heading-with-content .prose {
+    flex-direction: column;
+  }
+  .collagen-powder-section .scroll-arrow {
+    top: 60%;
+  }
+  .uflora-lp-static-press-seen-in,
+  .provitalean-lp-static-press-seen-in,
+  .osteva-lp-static-press-seen-in,
+  .uflora-lp-static-press-icons {
+    padding-top: 4% !important;
+    padding-bottom: 4% !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .price-table-v2 .pricing-sticker {
+    transform: scale(1) rotate(-10deg) !important;
+    top: 28dvh !important;
+    left: 30px !important;
+  }
+  .page-sp-osteva-y .button,
+  .page-sp-osteva-lumbar .button {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  :root {
+    --font-size-body: 16px;
+  }
+  .h0 {
+    font-size: 2.75rem;
+  }
+  .sp-provitalean--hero-banner .media-with-text__content,
+  .sp-provitalean--with-gap-section .media-with-text__content {
+    padding: 0;
+  }
+  .sp-provitalean--full-section .media-with-text__content {
+    padding-inline: var(--spacing-4);
+    padding-block: 0;
+  }
+  .sp-provitalean--hero-banner
+    .media-with-text__content
+    .prose
+    .content-btn-div
+    ul
+    li,
+  .sp-provitalean--full-section
+    .media-with-text__content
+    .prose
+    .content-btn-div
+    ul
+    li,
+  .sp-provitalean--with-gap-section
+    .media-with-text__content
+    .prose
+    .content-btn-div
+    ul
+    li {
+    font-size: 16px;
+    padding-block: var(--spacing-2);
+  }
+  .faq-block .button {
+    width: 100%;
+  }
+  .price-table-v2__col {
+    flex: 0 0 calc(85% - 20px);
+  }
+  .price-table-v2 .pricing-sticker {
+    transform: scale(1.1) rotate(-10deg) !important;
+    top: 20dvh !important;
+    left: 0 !important;
+    -webkit-transform: scale(1.1) rotate(-10deg) !important;
+    padding: 20px !important;
+  }
+  .price-table-v2 .card-title {
+    font-size: var(--font-size-h6) !important;
+  }
+  .price-table-v2 .card-subtitle {
+    font-size: var(--font-size-sm-body);
+  }
+}
+@media only screen and (max-width: 400px) {
+  .price-table-v2 .pricing-sticker {
+    transform: scale(1) rotate(-10deg) !important;
+    top: 20dvh !important;
+    left: -5px !important;
+    padding: 20px !important;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .price-table-v2 .pricing-sticker {
+    transform: scale(1) rotate(-10deg) !important;
+    top: 25dvh !important;
+    left: -5px !important;
+    padding: 20px !important;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .price-table-v2 .pricing-sticker {
+    transform: scale(1) rotate(-10deg) !important;
+    top: 22dvh !important;
+    left: -5px !important;
+    padding: 20px !important;
+  }
+}
+@media only screen and (max-width: 344px) {
+  .price-table-v2 .pricing-sticker {
+    transform: scale(1) rotate(-10deg) !important;
+    top: 18dvh !important;
+    left: -15px !important;
+    padding: 20px !important;
+  }
+}
+@media (min-width: 1000px) {
+  .lp-testimonials .section-header {
+    grid-template-columns: 1000px;
+  }
+  .h2 {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .product-comparison-table .h2 {
+    max-width: 100%;
+  }
+  .uflora-infection-stack-section {
+    padding-inline: 10%;
+  }
+  .collagen-fortifier-section .media-text-section__image img {
+    max-width: 40%;
+  }
+  .quick-result-section .media-text-section__subheading {
+    text-align: center;
+  }
+  .mbg-logo-section .media-text-section__image img {
+    max-width: 10%;
+  }
+  .osteva-capsule-section {
+    padding-block-start: 0;
+  }
+  .page-sp-osteva-sns
+    .collagen-fortifier-section
+    .media-text-section__content
+    p,
+  .page-sp-osteva-tendinopathy
+    .collagen-fortifier-section
+    .media-text-section__content
+    p,
+  .page-sp-osteva-tendinopathy-sns
+    .collagen-fortifier-section
+    .media-text-section__content
+    p {
+    text-align: center;
+  }
+  .page-sp-osteva-y .managing-pain-section .content-btn-div,
+  .page-sp-osteva-lumbar .managing-pain-section .content-btn-div,
+  .page-sp-osteva-rct .managing-pain-section .content-btn-div {
+    margin-top: var(--spacing-18) !important;
+  }
+  .page-sp-provitalean-gut-suppor .good-news-glp1-results .subheading {
+    font-weight: 600 !important;
+  }
+  .page-sp-osteva-rct .why-cant-fix--section {
+    padding-block-start: 0;
+  }
+}
+@media (min-width: 1150px) {
+  .collagen-powder-section .section-header {
+    grid-template-columns: 1000px !important;
+  }
+  .collagen-powder-section .multi-column-wrapper {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1440px) {
+  .price-table-v2 .pricing-sticker {
+    top: 270px !important;
+    left: 20px !important;
+  }
+  .page-sp-provitalean-gut-suppor
+    .gut-bacterial-burnout
+    .prose
+    div:last-of-type {
+    width: 75%;
+  }
+}
+@media (max-width: 1440px) {
+  .page-sp-osteva-y .creatine-section .media-with-text__media img {
+    object-fit: contain;
+  }
+}
+@media (min-width: 1600px) {
+  .price-table-v2 .pricing-sticker {
+    transform: scale(1.2) rotate(-10deg) !important;
+    top: 260px !important;
+    left: 50px !important;
+  }
+  .provitalean-lp-healthcare-professionals .content-over-media .content-part {
+    font-size: var(--font-size-h3);
+  }
+  .page-sp-osteva-y .content-part,
+  .page-sp-osteva-lumbar .content-part,
+  .page-sp-osteva-rct .content-part {
+    font-size: var(--font-size-h4) !important;
+  }
+  .page-sp-osteva-lumbar .image-bullet-list li {
+    align-items: center;
+  }
+  .page-sp-osteva-lumbar .managing-pain-section .media-with-text__content,
+  .page-sp-osteva-rct .managing-pain-section .media-with-text__content {
+    padding-inline: var(--media-with-text-content-padding) !important;
+    padding-block: 0;
+  }
+}
+@media (min-width: 1800px) {
+  .sp-provitalean--hero-banner .media-with-text__content {
+    padding-block: var(--spacing-6);
+    padding-inline: var(--spacing-20);
+    --font-size-body: 1.2rem;
+    --font-size-subheading: 1.3rem;
+  }
+  .price-table-v2 .pricing-sticker {
+    transform: scale(1.2) rotate(-10deg) !important;
+    top: 280px !important;
+    left: 75px !important;
+  }
+  .page-sp-osteva-y .osteva-banner .media-with-text__content {
+    padding: var(--media-with-text-content-padding);
+  }
+}
+@media (min-width: 2100px) {
+  .price-table-v2 .pricing-sticker {
+    transform: scale(1.4) rotate(-10deg) !important;
+    top: 270px !important;
+    left: 115px !important;
+  }
+  .price-table-v2 {
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+  }
+  .price-table-cards-container .card .card-row-icons .icon-container img {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media (min-width: 2400px) {
+  .price-table-v2 .pricing-sticker {
+    top: 262px !important;
+    left: 80px !important;
+  }
+  .price-table-v2 {
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+  }
+}
+@media (min-width: 3400px) {
+  .price-table-v2 .pricing-sticker {
+    top: 10dvh !important;
+    left: 10px !important;
+  }
+}
+@media (min-width: 550px) and (max-width: 999px) {
+  .page-sp-provitalean-gut-suppor
+    .good-news-glp1-results
+    .media-with-text__content {
+    justify-self: center;
+  }
+}
+/*# sourceMappingURL=/cdn/shop/t/3/assets/rejuveen-style-lp.css.map?v=129496521010802491181770348684 */
