@@ -4582,7 +4582,7 @@ document.querySelectorAll('.media-with-text').forEach(function (block) {
     
     /* Header section with duration and count */
     .price-table-v2__col .card-row-header {
-        background-color: #6eb5a0;
+        background-color: #f5f1e8;
         padding: 32px 24px;
         border-radius: 0;
         text-align: center;
@@ -4605,7 +4605,7 @@ document.querySelectorAll('.media-with-text').forEach(function (block) {
     }
     
     .price-table-v2 .price-table-v2__col--featured .card-row-header {
-        background-color: #6eb5a0;
+        background-color: #f5f1e8;
     }
     
     /* Title and Subtitle - uniform styling */
@@ -4680,46 +4680,51 @@ document.querySelectorAll('.media-with-text').forEach(function (block) {
     /* Content/features section */
     .price-table-v2 .card-content {
         flex: 1;
-        padding: 24px;
+        padding: 20px 24px;
         display: flex;
         flex-direction: column;
-        gap: 12px;
+        gap: 0;
+        justify-content: space-between;
+        align-items: center;
     }
     
     .price-table-v2 .card-content p {
-        font-size: 14px;
+        font-size: 13px;
         color: #565656;
-        margin: 0;
+        margin: 8px 0;
         line-height: 1.5;
+        text-align: center;
+        width: 100%;
     }
     
     /* Button - uniform styling */
     .price-table-v2 .btn,
     .price-table-v2__col button {
-        background: #ffd700;
-        color: #000000 !important;
+        background: #c74827;
+        color: #ffffff !important;
         border: none;
         font-size: 16px;
         font-weight: 700;
         border-radius: 50px;
-        padding: 14px 32px;
+        padding: 16px 40px;
         cursor: pointer;
         text-transform: uppercase;
         letter-spacing: 0.5px;
-        margin-top: auto;
-        margin-bottom: 16px;
+        margin-top: 12px;
+        margin-bottom: 0;
         margin-left: auto;
         margin-right: auto;
         width: fit-content;
         transition: all 0.3s ease;
-        box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+        box-shadow: 0 4px 12px rgba(199, 72, 39, 0.3);
+        position: relative;
     }
     
     .price-table-v2 .btn:hover,
     .price-table-v2__col button:hover {
-        background: #ffed4e;
+        background: #a83820;
         transform: scale(1.05);
-        box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+        box-shadow: 0 6px 20px rgba(199, 72, 39, 0.4);
     }
     
     /* Discount code styling */
@@ -4742,30 +4747,31 @@ document.querySelectorAll('.media-with-text').forEach(function (block) {
         border-radius: 4px;
     }
     
-    /* Pricing sticker (badge) */
+    /* Pricing sticker (badge) - positioned on button */
     .price-table-v2 .pricing-sticker {
-        background: #1a4d4a;
+        background: #c74827;
         color: #ffffff;
         width: 90px;
         height: 90px;
         position: absolute;
         z-index: 20;
         border-radius: 50%;
-        padding: 10px;
-        transform: rotate(-15deg);
-        top: -15px;
-        right: 20px;
+        padding: 8px;
+        transform: rotate(-12deg);
+        bottom: 24px;
+        right: -8px;
         font-weight: 900;
-        font-size: 12px;
+        font-size: 11px;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+        border: 3px solid #ffffff;
     }
     
     .price-table-v2__col--featured .pricing-sticker {
-        background: #1a4d4a;
+        background: #c74827;
     }
     
     .pricing-sticker--percentage {
