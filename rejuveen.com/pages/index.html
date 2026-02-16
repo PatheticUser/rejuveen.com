@@ -4523,237 +4523,376 @@ document.querySelectorAll('.media-with-text').forEach(function (block) {
 </div><div id="shopify-section-template--18667666636962__price_table_AepxhP" class="shopify-section"><style>
     /* Price Table v2 */
 
+    /* Price Table v2 - Responsive Pricing Cards */
+    
     .price-table-v2 {
-        padding-left: 5%;
-        padding-right: 5%;
+        padding: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+        align-items: stretch;
     }
-    .price-table-v2 .card{
-      box-shadow: 0 0 10px rgb(0 0 0 / 39%) !important;
-      border-radius: 12px;
-      height: 100%;
-      background-color: #ffffff;
+    
+    .price-table-v2__col {
+        flex: 1 1 100%;
+        max-width: 360px;
+        min-width: 280px;
+        position: relative;
     }
-    .price-table-v2 .card-top-header{
-      background-color: #00c0bc;
-      font-size: 16px;
-      font-weight: 500;
-      font-family: var(--font-nantes);
-      border-radius: 10px 10px 0 0;
-      text-transform: uppercase;
-      color: var(--secondary-bg-color);
-      width: fit-content;
-      padding-left: 5%;
-      padding-right: 5%;
-      padding-top: 2%;
-      padding-bottom: 2%;
-      margin-left: auto;
-      margin-right: auto;
+    
+    .price-table-v2 .card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        background-color: #ffffff;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+    
+    .price-table-v2 .card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.16);
+    }
+    
+    /* Badge - uniform for all cards */
+    .price-table-v2 .card-top-header {
+        background-color: #1a4d4a;
+        font-size: 14px;
+        font-weight: 700;
+        font-family: var(--font-nantes);
+        text-transform: uppercase;
+        color: #ffffff;
+        width: fit-content;
+        padding: 8px 16px;
+        margin: -10px auto 0;
+        border-radius: 20px;
+        position: relative;
+        z-index: 10;
+    }
+    
+    .price-table-v2 .card-top-header--empty {
+        opacity: 0;
+        height: 0;
+        padding: 0;
+        margin: 0;
+    }
+    
+    /* Header section with duration and count */
     .price-table-v2__col .card-row-header {
-        padding-top: 5% !important;
-        background-color: var(--landing-page-arrow-color);
-        border-radius: 10px 10px 0 0;
-        padding: 3%;
-    }
-  
-    .price-table-v2 .price-table-v2__col--featured .card{
-      box-shadow: 0 0 10px rgb(0 0 0 / 39%) !important;
-    }
-    .price-table-v2 .price-table-v2__col--featured .card-top-header{
-      background-color: #83ADBC;
-      font-style: italic;
-    }
-    .price-table-v2 .price-table-v2__col--featured .card-row-header{
-      background-color: var(--primary-color);
-    }
-    .price-table-v2 .card-top-header--empty{
-      opacity:0;
-    }
-  
-    .price-table-v2__col--featured  .card-title,
-    .price-table-v2__col--featured  .card-subtitle{
-      color: var(--primary-bg-color) !important;
-    }
-
-    .price-table-v2__col--featured  .card-title.card-title-placeholder{
-      color: var(--primary-color) !important;
+        background-color: #6eb5a0;
+        padding: 32px 24px;
+        border-radius: 0;
+        text-align: center;
+        min-height: 140px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
     }
     
-    .price-table-v2__col{
-        position:relative
-    }
-
-    .price-table-v2 .card-title{
-      font-size: var(--font-size-h6);
-      font-family: var(--font-ppmori) !important;
-      color: var(--custom-black);
-      font-weight: bolder;
-    }
-
-    .price-table-v2 .card-title.card-title-placeholder{
-      color: var(--landing-page-arrow-color);
-    }
-
-    .price-table-v2 .card-subtitle{
-      font-size: var(--font-size-sm-body);
-      color: var(--custom-black);
-      font-family: var(--font-ppmori)!important
-    }
-    .price-table-v2 .highlighted-price{
-      font-size: 38px !important;
-      line-height: 1;
-      margin-top: 5%;
-      color: #565656;
-      font-weight: bold;
-      font-family: var(--font-nantes);
-    }
-    .price-table-v2 .highlighted-price .money{
-      margin-right: -5px;
-    }
-  
-    .price-table-v2 .card-row-icon{
-      width: 110px;
-      height: 110px;
-    }
-    .price-table-v2 .btn{
-      background: var(--primary-color);
-      border: 2px solid var(--primary-color);
-      font-size: var(--font-size-body);
-      width: fit-content;
-      border-radius: 55px;
-      padding: 12px 18px;
-      box-shadow: 10px 10px 5px -5px rgba(179,179,179,1);
-      color: #fefff9 !important;
-      line-height: 1;
+    /* Featured (best value) card styling */
+    .price-table-v2 .price-table-v2__col--featured .card {
+        border: 2px solid #1a4d4a;
     }
     
-    .price-table-v2 .btn{
-      padding-left: 10% !important;
-      padding-right: 10% !important;
-    }
-    @media (min-width: 2100px) {
-      padding-left: 5% !important;
-      padding-right: 5% !important;
-      font-size: var(--font-size-h5);
+    .price-table-v2 .price-table-v2__col--featured .card-top-header {
+        background-color: #1a4d4a;
+        color: #ffffff;
     }
     
-    .price-table-v2 .crossed::before{
-      content: '';
-      position: absolute;
-      margin-top: 10px;
-      width: 12%;
-      height: 2px;
-      background-color: var(--bb-grey-secondary);
-      transform: rotate(345deg);
-      z-index: 1;
+    .price-table-v2 .price-table-v2__col--featured .card-row-header {
+        background-color: #6eb5a0;
     }
-  
-    .price-table-v2 .pricing-sticker{
-        background: black;
-        color: white;
-        width: 100px;
-        position: absolute;
-        height: 100px;
-        z-index: 1;
-        border-radius: 100px;
-        padding: 15px 10px 10px 10px;
-        transform: rotate(-10deg);
-        top: 220px;
-        left: -10px;
-        font-weight:bold;
+    
+    /* Title and Subtitle - uniform styling */
+    .price-table-v2 .card-title {
+        font-size: 28px;
+        font-weight: 900;
+        font-family: var(--font-nantes);
+        color: #1a4d4a;
+        margin: 0;
+        text-transform: uppercase;
+        letter-spacing: 1px;
     }
-  
-    .pricing-sticker--percentage{
-      font-size: 0.6rem;
-      line-height: 1.1;
-      text-align: center;
-      padding-top: 25px !important;
+    
+    .price-table-v2 .card-title.card-title-placeholder {
+        color: #1a4d4a;
     }
-    .pricing-sticker--percentage span{
-      display: block;
-      font-size: 28px;
+    
+    .price-table-v2 .card-subtitle {
+        font-size: 14px;
+        font-weight: 700;
+        font-family: var(--font-nantes);
+        color: #565656;
+        margin: 0;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
     }
-  
-    .price-table-v2__col--featured  .pricing-sticker{
-      background: #83ADBC;
+    
+    /* Product image section */
+    .price-table-v2 .card-row-icon {
+        width: 100%;
+        height: 160px;
+        padding: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f9f9f9;
     }
-  
-    .price-table-v2__col .select,
-    .price-table-v2__col .add_to_cart{
-        display:none;
+    
+    .price-table-v2 .card-row-icon img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
     }
-  
-      .price-table-v2__col .text-retail-price{
-          color: #565656 !important;
-          font-size: var(--font-size-body);
-      }
-      .price-table-v2__col .text-save-price{
-          color: #dc2626 !important;
-          font-weight: bold;
-      }
-  
-    .price-table-v2__col button{
-        background: #fefe9c;
-        padding: 10px;
-    }
-  
-    .price-table-v2__col .pricing-total-price{
-      font-size: var(--font-size-xxs-body);
-      color: #565656;
-      font-weight: bold;
-    }
-  
-    .price-table-v2__col .pricing-table__discount-code{
-      font-size: 16px;
-    }
-    .price-table-v2__col .pricing-table__discount-code span{
-      background: #fff800;
-      border: dotted 2px;
-      font-weight: bold;
-      padding: 3px;
-      margin-left: 5px;
-    }
-    .price-table--promo-banner{
-      text-align: center;
-      margin: 0 auto;
-    }
-    .price-table-free-shipping{
+    
+    /* Price section */
+    .price-table-v2 .highlighted-price {
+        font-size: clamp(24px, 5vw, 36px);
+        line-height: 1.2;
+        margin: 16px 0;
+        color: #1a4d4a;
+        font-weight: 900;
+        font-family: var(--font-nantes);
         text-align: center;
     }
+    
+    .price-table-v2 .highlighted-price .money {
+        margin-right: 0;
+    }
+    
+    .price-table-v2__col .text-retail-price {
+        color: #999999 !important;
+        font-size: 13px;
+        text-decoration: line-through;
+    }
+    
+    .price-table-v2__col .text-save-price {
+        color: #e74c3c !important;
+        font-weight: 700;
+        font-size: 12px;
+    }
+    
+    /* Content/features section */
+    .price-table-v2 .card-content {
+        flex: 1;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .price-table-v2 .card-content p {
+        font-size: 14px;
+        color: #565656;
+        margin: 0;
+        line-height: 1.5;
+    }
+    
+    /* Button - uniform styling */
+    .price-table-v2 .btn,
+    .price-table-v2__col button {
+        background: #ffd700;
+        color: #000000 !important;
+        border: none;
+        font-size: 16px;
+        font-weight: 700;
+        border-radius: 50px;
+        padding: 14px 32px;
+        cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-top: auto;
+        margin-bottom: 16px;
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+    }
+    
+    .price-table-v2 .btn:hover,
+    .price-table-v2__col button:hover {
+        background: #ffed4e;
+        transform: scale(1.05);
+        box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+    }
+    
+    /* Discount code styling */
+    .price-table-v2__col .pricing-table__discount-code {
+        font-size: 12px;
+        text-align: center;
+        padding: 12px;
+        background: #fffacd;
+        border: 2px dotted #ffd700;
+        border-radius: 8px;
+        font-weight: 600;
+    }
+    
+    .price-table-v2__col .pricing-table__discount-code span {
+        background: #ffd700;
+        border: 1px solid #ffed4e;
+        font-weight: 700;
+        padding: 4px 8px;
+        margin-left: 8px;
+        border-radius: 4px;
+    }
+    
+    /* Pricing sticker (badge) */
+    .price-table-v2 .pricing-sticker {
+        background: #1a4d4a;
+        color: #ffffff;
+        width: 90px;
+        height: 90px;
+        position: absolute;
+        z-index: 20;
+        border-radius: 50%;
+        padding: 10px;
+        transform: rotate(-15deg);
+        top: -15px;
+        right: 20px;
+        font-weight: 900;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+    
+    .price-table-v2__col--featured .pricing-sticker {
+        background: #1a4d4a;
+    }
+    
+    .pricing-sticker--percentage {
+        font-size: 11px;
+        line-height: 1.2;
+        text-align: center;
+    }
+    
+    .pricing-sticker--percentage span {
+        display: block;
+        font-size: 24px;
+        font-weight: 900;
+    }
+    
+    /* Hide unnecessary elements */
+    .price-table-v2__col .select,
+    .price-table-v2__col .add_to_cart {
+        display: none;
+    }
+    
+    .price-table--promo-banner {
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .price-table-free-shipping {
+        text-align: center;
+        padding: 12px;
+        background: #f0f8f6;
+        border-radius: 8px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #1a4d4a;
+    }
+    
+    .price-table-free-shipping p {
+        margin: 0;
+    }
+    
+    /* Responsive Design */
     @media screen and (max-width: 768px) {
-        .price-table-free-shipping p{
-            font-size:16px;
-        }   
         .price-table-v2 {
-          display: flex;
-          flex-direction: column;
-          margin: 0;
-          padding: 0;
+            padding: 1.5rem;
+            gap: 1.5rem;
         }
-  
+        
         .price-table-v2__col {
-          order: 2;
+            flex: 1 1 calc(50% - 0.75rem);
+            max-width: none;
+            min-width: auto;
         }
-  
-        .price-table-v2__col:nth-child(2) {
-          order: 1;
-        }
-
-
+        
         .price-table-v2 .card-title {
-            font-size: var(--font-size-h3);
+            font-size: 20px;
         }
-
-        .price-table-v2 .card-subtitle {
-            font-size: var(--font-size-body);
+        
+        .price-table-v2 .highlighted-price {
+            font-size: 20px;
+        }
+        
+        .price-table-v2 .card-top-header {
+            font-size: 12px;
+            padding: 6px 12px;
+        }
+        
+        .price-table-v2__col .card-row-header {
+            padding: 24px 16px;
+            min-height: 120px;
+        }
+        
+        .price-table-free-shipping p {
+            font-size: 12px;
         }
     }
-
-    @media (min-width: 2100px) {
-        .price-table-v2 .highlighted-price {
-          font-size: var(--font-size-h2) !important;
+    
+    @media screen and (max-width: 480px) {
+        .price-table-v2 {
+            padding: 1rem;
+            gap: 1rem;
         }
-
+        
+        .price-table-v2__col {
+            flex: 1 1 100%;
+            min-width: auto;
+            max-width: none;
+        }
+        
+        .price-table-v2 .card-title {
+            font-size: 18px;
+        }
+        
+        .price-table-v2 .card-subtitle {
+            font-size: 12px;
+        }
+        
+        .price-table-v2 .highlighted-price {
+            font-size: 18px;
+            margin: 12px 0;
+        }
+        
+        .price-table-v2 .card-content {
+            padding: 16px;
+        }
+        
+        .price-table-v2 .btn,
+        .price-table-v2__col button {
+            padding: 12px 24px;
+            font-size: 14px;
+        }
+        
+        .price-table-v2 .pricing-sticker {
+            width: 75px;
+            height: 75px;
+            font-size: 10px;
+            top: -10px;
+            right: 10px;
+        }
+        
+        .pricing-sticker--percentage span {
+            font-size: 18px;
+        }
+    }
+    
+    @media screen and (min-width: 1024px) {
+        .price-table-v2__col {
+            flex: 1 1 calc(33.333% - 1.35rem);
+        }
     }
   
   
