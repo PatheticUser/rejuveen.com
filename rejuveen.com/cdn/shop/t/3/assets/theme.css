@@ -561,18 +561,20 @@ recently-viewed-products {
   line-height: 1.7;
 }
 .button--lg {
-  font-size: var(--text-base);
-  padding-block-start: 0.8125rem;
-  padding-block-end: 0.8125rem;
-  padding-inline-start: var(--spacing-6);
-  padding-inline-end: var(--spacing-6);
+  font-size: 1.125rem;
+  padding-block-start: 0.95rem;
+  padding-block-end: 0.95rem;
+  padding-inline-start: var(--spacing-7);
+  padding-inline-end: var(--spacing-10);
+  min-width: 17rem;
 }
 .button--xl {
-  font-size: var(--text-base);
-  padding-block-start: var(--spacing-4);
-  padding-block-end: var(--spacing-4);
+  font-size: 1.25rem;
+  padding-block-start: 1.1rem;
+  padding-block-end: 1.1rem;
   padding-inline-start: var(--spacing-8);
-  padding-inline-end: var(--spacing-8);
+  padding-inline-end: var(--spacing-12);
+  min-width: 22rem;
 }
 .button--secondary {
   --button-background: var(--header-background) /
@@ -625,16 +627,18 @@ recently-viewed-products {
     padding-inline-end: var(--spacing-5);
   }
   .button--lg {
-    padding-block-start: var(--spacing-3-5);
-    padding-block-end: var(--spacing-3-5);
-    padding-inline-start: var(--spacing-8);
-    padding-inline-end: var(--spacing-8);
+    padding-block-start: var(--spacing-4);
+    padding-block-end: var(--spacing-4);
+    padding-inline-start: var(--spacing-9);
+    padding-inline-end: var(--spacing-11);
+    min-width: 19rem;
   }
   .button--xl {
-    padding-block-start: 1.075rem;
-    padding-block-end: 1.075rem;
-    padding-inline-start: var(--spacing-10);
-    padding-inline-end: var(--spacing-10);
+    padding-block-start: 1.2rem;
+    padding-block-end: 1.2rem;
+    padding-inline-start: var(--spacing-12);
+    padding-inline-end: var(--spacing-16);
+    min-width: 24rem;
   }
 }
 .back-button {

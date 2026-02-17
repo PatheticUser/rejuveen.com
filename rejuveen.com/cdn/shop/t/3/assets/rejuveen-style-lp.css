@@ -108,10 +108,20 @@ body {
   text-transform: uppercase;
 }
 .button--lg {
-  padding-block-end: 0.7rem;
+  font-size: 1.125rem;
+  padding-block-start: 0.95rem;
+  padding-block-end: 0.95rem;
+  padding-inline-start: 2rem;
+  padding-inline-end: 2.75rem;
+  min-width: 19rem;
 }
 .button--xl {
-  padding-block-end: 0.9rem;
+  font-size: 1.25rem;
+  padding-block-start: 1.1rem;
+  padding-block-end: 1.1rem;
+  padding-inline-start: 2.75rem;
+  padding-inline-end: 4rem;
+  min-width: 24rem;
 }
 .text-left {
   text-align: left;
